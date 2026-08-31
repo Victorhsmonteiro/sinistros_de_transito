@@ -1,0 +1,2188 @@
+{
+  "metadata": {
+    "titulo": "Base de dados de sinistros de trânsito do Piauí",
+    "ultima_atualizacao": "SUBSTITUIR pela data da sua última importação de dados",
+    "fontes_recomendadas": [
+      "DETRAN-PI",
+      "SESAPI (Secretaria de Saúde do Piauí) - SIM/SINAN",
+      "PRF (Polícia Rodoviária Federal)",
+      "CBMPI (Corpo de Bombeiros)",
+      "VIVA Inquérito 2014 (Ministério da Saúde) - já incluído em 'fonte_dados_viva_2014' e seções relacionadas",
+      "Bastos et al. Rev Bras Epidemiol 2026;29:e260044 - já incluído em 'estudo_morbidade_piaui_2010_2023', dados REAIS e ESPECÍFICOS do Piauí (SIH/SUS, 2010-2023)",
+      "DADOS.docx (consulta bruta TABNET/DATASUS, SIH/SUS) - já incluído em 'dados_tabnet_piaui_teresina': Piauí (2009-2026) e Teresina, por categoria CID-10 V01-V89"
+    ],
+    "observacao": "A chave 'piaui_dados_locais.sinistros_individuais' ainda é um EXEMPLO ilustrativo (não há fonte aberta de geolocalização de sinistros individuais no Piauí até o momento). Já são dados REAIS: 'fonte_dados_viva_2014' + 'perfil_demografico' + 'evento' + 'atendimento_evolucao' (nacionais, VIVA 2014) e 'estudo_morbidade_piaui_2010_2023' (específico do Piauí, SIH/SUS 2010-2023, Rev Bras Epidemiol 2026). Também é dado REAL: 'dados_tabnet_piaui_teresina' (consulta bruta TABNET/DATASUS, SIH/SUS), com série mais longa para o Piauí (2009-2026) e recorte específico do município de Teresina; não usa a mesma metodologia do artigo em 'estudo_morbidade_piaui_2010_2023', então os totais não coincidem exatamente entre as duas fontes."
+  },
+  "fonte_dados_viva_2014": {
+    "nome": "Inquérito VIVA 2014 - Vigilância de Violências e Acidentes",
+    "responsavel": "Ministério da Saúde",
+    "abrangencia": "Nacional - 86 serviços de urgência e emergência em capitais brasileiras e no Distrito Federal",
+    "abrangencia_piaui": "NÃO é uma amostra específica do Piauí - use como referência nacional de apoio",
+    "amostra_total": 9673,
+    "unidade_amostral": "atendimentos de emergência a motociclistas acidentados",
+    "periodo_coleta": "Setembro a novembro de 2014",
+    "principais_fatores_relatados": "Acidente de trajeto/trabalho em 41,4% dos casos; consumo de álcool relatado em 13,3% dos casos"
+  },
+  "perfil_demografico": {
+    "sexo": {
+      "razao_masculino_feminino": "3,2 : 1",
+      "masculino_pct_amostra": 0.762,
+      "feminino_pct_amostra": 0.238,
+      "observacao": "Estimado a partir do total de casos (masculino ~7371, feminino ~2325 no total de 9673)"
+    },
+    "faixa_etaria": {
+      "0_a_9_anos": {
+        "total_n": 114,
+        "total_pct": 0.01,
+        "masculino_pct": 0.007,
+        "feminino_pct": 0.022
+      },
+      "10_a_19_anos": {
+        "total_n": 1472,
+        "total_pct": 0.149,
+        "masculino_pct": 0.137,
+        "feminino_pct": 0.188
+      },
+      "20_a_39_anos": {
+        "total_n": 6240,
+        "total_pct": 0.657,
+        "masculino_pct": 0.661,
+        "feminino_pct": 0.642
+      },
+      "40_a_59_anos": {
+        "total_n": 1675,
+        "total_pct": 0.168,
+        "masculino_pct": 0.176,
+        "feminino_pct": 0.138
+      },
+      "60_anos_ou_mais": {
+        "total_n": 172,
+        "total_pct": 0.017,
+        "masculino_pct": 0.019,
+        "feminino_pct": 0.01
+      }
+    },
+    "raca_cor": {
+      "branca": {
+        "total_n": 1937,
+        "total_pct": 0.241,
+        "masculino_pct": 0.233,
+        "feminino_pct": 0.271
+      },
+      "preta_parda": {
+        "total_n": 7457,
+        "total_pct": 0.736,
+        "masculino_pct": 0.747,
+        "feminino_pct": 0.696
+      },
+      "amarela_indigena": {
+        "total_n": 254,
+        "total_pct": 0.023,
+        "masculino_pct": 0.021,
+        "feminino_pct": 0.033
+      }
+    },
+    "escolaridade": {
+      "ate_8_anos": {
+        "total_n": 3757,
+        "total_pct": 0.408,
+        "masculino_pct": 0.43,
+        "feminino_pct": 0.333
+      },
+      "9_anos_ou_mais": {
+        "total_n": 5218,
+        "total_pct": 0.592,
+        "masculino_pct": 0.57,
+        "feminino_pct": 0.667
+      }
+    },
+    "atividade_remunerada": {
+      "sim": {
+        "total_n": 6847,
+        "total_pct": 0.764,
+        "masculino_pct": 0.809,
+        "feminino_pct": 0.602
+      },
+      "nao": {
+        "total_n": 2439,
+        "total_pct": 0.237,
+        "masculino_pct": 0.191,
+        "feminino_pct": 0.398
+      }
+    },
+    "plano_saude": {
+      "sim": {
+        "total_n": 692,
+        "total_pct": 0.09,
+        "masculino_pct": 0.087,
+        "feminino_pct": 0.099
+      },
+      "nao": {
+        "total_n": 8651,
+        "total_pct": 0.91,
+        "masculino_pct": 0.913,
+        "feminino_pct": 0.901
+      }
+    }
+  },
+  "evento": {
+    "tipo_vitima": {
+      "condutor": {
+        "total_n": 7818,
+        "total_pct": 0.809,
+        "masculino_pct": 0.904,
+        "feminino_pct": 0.473
+      },
+      "passageiro": {
+        "total_n": 1872,
+        "total_pct": 0.191,
+        "masculino_pct": 0.096,
+        "feminino_pct": 0.527
+      }
+    },
+    "outra_parte_envolvida": {
+      "automovel": {
+        "total_n": 3900,
+        "total_pct": 0.44,
+        "masculino_pct": 0.44,
+        "feminino_pct": 0.438
+      },
+      "motocicleta": {
+        "total_n": 1350,
+        "total_pct": 0.138,
+        "masculino_pct": 0.135,
+        "feminino_pct": 0.146
+      }
+    },
+    "natureza_lesao": {
+      "corte_laceracao": {
+        "total_n": 3290,
+        "total_pct": 0.302,
+        "masculino_pct": 0.31,
+        "feminino_pct": 0.274
+      },
+      "fratura_amputacao": {
+        "total_n": 2988,
+        "total_pct": 0.32,
+        "masculino_pct": 0.334,
+        "feminino_pct": 0.272
+      }
+    },
+    "parte_corpo_atingida": {
+      "membros_superiores": {
+        "total_n": 1942,
+        "total_pct": 0.204,
+        "masculino_pct": 0.211,
+        "feminino_pct": 0.177
+      },
+      "membros_inferiores": {
+        "total_n": 3498,
+        "total_pct": 0.387,
+        "masculino_pct": 0.375,
+        "feminino_pct": 0.427
+      },
+      "cabeca_pescoco": {
+        "total_n": 888,
+        "total_pct": 0.095,
+        "masculino_pct": 0.098,
+        "feminino_pct": 0.087
+      }
+    },
+    "uso_capacete": {
+      "sim": {
+        "total_n": 7485,
+        "total_pct": 0.791,
+        "masculino_pct": 0.793,
+        "feminino_pct": 0.783
+      },
+      "nao": {
+        "total_n": 1853,
+        "total_pct": 0.209,
+        "masculino_pct": 0.207,
+        "feminino_pct": 0.217
+      }
+    },
+    "consumo_alcool": {
+      "sim": {
+        "total_n": 1398,
+        "total_pct": 0.133,
+        "masculino_pct": 0.148,
+        "feminino_pct": 0.082
+      },
+      "nao": {
+        "total_n": 7968,
+        "total_pct": 0.867,
+        "masculino_pct": 0.852,
+        "feminino_pct": 0.918
+      }
+    },
+    "relacionado_trabalho": {
+      "sim": {
+        "total_n": 2921,
+        "total_pct": 0.414,
+        "masculino_pct": 0.437,
+        "feminino_pct": 0.329
+      },
+      "nao": {
+        "total_n": 5145,
+        "total_pct": 0.586,
+        "masculino_pct": 0.564,
+        "feminino_pct": 0.671
+      }
+    }
+  },
+  "atendimento_evolucao": {
+    "locomocao_para_hospital": {
+      "samu_ambulancia_resgate": {
+        "total_n": 4153,
+        "total_pct": 0.436,
+        "masculino_pct": 0.433,
+        "feminino_pct": 0.446
+      },
+      "veiculo_particular": {
+        "total_n": 4764,
+        "total_pct": 0.467,
+        "masculino_pct": 0.467,
+        "feminino_pct": 0.468
+      }
+    },
+    "atendimento_previo": {
+      "sim": {
+        "total_n": 2359,
+        "total_pct": 0.269,
+        "masculino_pct": 0.272,
+        "feminino_pct": 0.256
+      },
+      "nao": {
+        "total_n": 7198,
+        "total_pct": 0.732,
+        "masculino_pct": 0.728,
+        "feminino_pct": 0.744
+      }
+    },
+    "evolucao": {
+      "alta": {
+        "total_n": 6550,
+        "total_pct": 0.69,
+        "masculino_pct": 0.677,
+        "feminino_pct": 0.735
+      },
+      "internacao_hospitalar": {
+        "total_n": 2161,
+        "total_pct": 0.238,
+        "masculino_pct": 0.249,
+        "feminino_pct": 0.199
+      },
+      "encaminhamento_ambulatorial": {
+        "total_n": 639,
+        "total_pct": 0.059,
+        "masculino_pct": 0.06,
+        "feminino_pct": 0.056
+      },
+      "obito_outros": {
+        "total_n": 97,
+        "total_pct": 0.013,
+        "masculino_pct": 0.014,
+        "feminino_pct": 0.011
+      }
+    }
+  },
+  "piaui_dados_locais": {
+    "observacao": "As estatísticas gerais de internação, letalidade, custo e permanência do Piauí já são dados REAIS (veja 'estudo_morbidade_piaui_2010_2023'). Esta chave guarda só um EXEMPLO ilustrativo de registro individual de sinistro com geolocalização (rodovia/km/município) — ainda não há uma fonte aberta equivalente para o Piauí; substitua por dados do DETRAN-PI/PRF se e quando disponíveis.",
+    "sinistros_individuais": [
+      {
+        "id": "SIN-0001",
+        "data": "2025-03-14",
+        "hora": "18:40",
+        "municipio": "Teresina",
+        "rodovia_ou_via": "BR-343",
+        "km": 12,
+        "tipo_via": "rodovia federal",
+        "tipo_acidente": "colisão traseira",
+        "tipo_veiculo_principal": "motocicleta",
+        "condutor_habilitado": true,
+        "uso_capacete": false,
+        "uso_cinto_seguranca": null,
+        "vitimas_fatais": 1,
+        "vitimas_feridas_graves": 1,
+        "vitimas_feridas_leves": 0,
+        "condicoes_climaticas": "tempo limpo",
+        "periodo_dia": "noite"
+      },
+      {
+        "id": "SIN-0002",
+        "data": "2025-04-02",
+        "hora": "07:15",
+        "municipio": "Parnaíba",
+        "rodovia_ou_via": "PI-113",
+        "km": 5,
+        "tipo_via": "rodovia estadual",
+        "tipo_acidente": "saída de pista",
+        "tipo_veiculo_principal": "automóvel",
+        "condutor_habilitado": true,
+        "uso_capacete": null,
+        "uso_cinto_seguranca": false,
+        "vitimas_fatais": 1,
+        "vitimas_feridas_graves": 0,
+        "vitimas_feridas_leves": 2,
+        "condicoes_climaticas": "chuva",
+        "periodo_dia": "manhã"
+      },
+      {
+        "id": "SIN-0003",
+        "data": "2025-05-19",
+        "hora": "22:10",
+        "municipio": "Teresina",
+        "rodovia_ou_via": "Av. Raul Lopes",
+        "km": null,
+        "tipo_via": "via urbana",
+        "tipo_acidente": "atropelamento",
+        "tipo_veiculo_principal": "motocicleta",
+        "condutor_habilitado": false,
+        "uso_capacete": true,
+        "uso_cinto_seguranca": null,
+        "vitimas_fatais": 0,
+        "vitimas_feridas_graves": 1,
+        "vitimas_feridas_leves": 0,
+        "condicoes_climaticas": "tempo limpo",
+        "periodo_dia": "noite"
+      }
+    ]
+  },
+  "indice_busca": {
+    "capacete": [
+      "evento.uso_capacete"
+    ],
+    "cinto": [],
+    "alcool": [
+      "evento.consumo_alcool"
+    ],
+    "idade": [
+      "perfil_demografico.faixa_etaria",
+      "estudo_morbidade_piaui_2010_2023.taxa_internacao_hospitalar_100mil_hab.por_faixa_etaria",
+      "dados_tabnet_piaui_teresina.piaui.internacoes_por_idade_e_categoria",
+      "dados_tabnet_piaui_teresina.teresina.internacoes_por_idade_e_categoria"
+    ],
+    "faixa etaria": [
+      "estudo_morbidade_piaui_2010_2023.taxa_internacao_hospitalar_100mil_hab.por_faixa_etaria",
+      "dados_tabnet_piaui_teresina.piaui.internacoes_por_idade_e_categoria",
+      "dados_tabnet_piaui_teresina.teresina.internacoes_por_idade_e_categoria"
+    ],
+    "sexo": [
+      "perfil_demografico.sexo",
+      "estudo_morbidade_piaui_2010_2023.taxa_internacao_hospitalar_100mil_hab.por_sexo",
+      "dados_tabnet_piaui_teresina.piaui.internacoes_por_sexo_e_categoria",
+      "dados_tabnet_piaui_teresina.teresina.internacoes_por_sexo_e_categoria"
+    ],
+    "genero": [
+      "perfil_demografico.sexo",
+      "dados_tabnet_piaui_teresina.piaui.internacoes_por_sexo_e_categoria",
+      "dados_tabnet_piaui_teresina.teresina.internacoes_por_sexo_e_categoria"
+    ],
+    "homem": [
+      "estudo_morbidade_piaui_2010_2023.taxa_internacao_hospitalar_100mil_hab.por_sexo",
+      "dados_tabnet_piaui_teresina.piaui.internacoes_por_sexo_e_categoria"
+    ],
+    "mulher": [
+      "estudo_morbidade_piaui_2010_2023.taxa_internacao_hospitalar_100mil_hab.por_sexo",
+      "dados_tabnet_piaui_teresina.piaui.internacoes_por_sexo_e_categoria"
+    ],
+    "raca": [
+      "perfil_demografico.raca_cor"
+    ],
+    "cor": [
+      "perfil_demografico.raca_cor"
+    ],
+    "escolaridade": [
+      "perfil_demografico.escolaridade"
+    ],
+    "trabalho": [
+      "evento.relacionado_trabalho",
+      "perfil_demografico.atividade_remunerada"
+    ],
+    "obito": [
+      "atendimento_evolucao.evolucao.obito_outros",
+      "estudo_morbidade_piaui_2010_2023.letalidade_hospitalar_pct",
+      "dados_tabnet_piaui_teresina.piaui.obitos_por_categoria",
+      "dados_tabnet_piaui_teresina.teresina.obitos_por_categoria"
+    ],
+    "morte": [
+      "atendimento_evolucao.evolucao.obito_outros",
+      "estudo_morbidade_piaui_2010_2023.letalidade_hospitalar_pct",
+      "dados_tabnet_piaui_teresina.piaui.obitos_por_categoria",
+      "dados_tabnet_piaui_teresina.teresina.obitos_por_categoria"
+    ],
+    "mortalidade": [
+      "estudo_morbidade_piaui_2010_2023.letalidade_hospitalar_pct",
+      "dados_tabnet_piaui_teresina.piaui.taxa_mortalidade_pct_por_categoria",
+      "dados_tabnet_piaui_teresina.teresina.taxa_mortalidade_pct_por_categoria"
+    ],
+    "letalidade": [
+      "estudo_morbidade_piaui_2010_2023.letalidade_hospitalar_pct",
+      "dados_tabnet_piaui_teresina.piaui.taxa_mortalidade_pct_por_categoria",
+      "dados_tabnet_piaui_teresina.teresina.taxa_mortalidade_pct_por_categoria"
+    ],
+    "internacao": [
+      "atendimento_evolucao.evolucao.internacao_hospitalar",
+      "estudo_morbidade_piaui_2010_2023.taxa_internacao_hospitalar_100mil_hab",
+      "dados_tabnet_piaui_teresina.piaui.internacoes_por_ano",
+      "dados_tabnet_piaui_teresina.piaui.internacoes_por_categoria_e_ano",
+      "dados_tabnet_piaui_teresina.teresina.internacoes_por_categoria"
+    ],
+    "hospital": [
+      "atendimento_evolucao",
+      "estudo_morbidade_piaui_2010_2023",
+      "dados_tabnet_piaui_teresina.piaui.permanencia_media_dias_por_categoria",
+      "dados_tabnet_piaui_teresina.teresina.permanencia_media_dias_por_categoria"
+    ],
+    "hospitalar": [
+      "estudo_morbidade_piaui_2010_2023",
+      "dados_tabnet_piaui_teresina.piaui.permanencia_media_dias_por_categoria",
+      "dados_tabnet_piaui_teresina.teresina.permanencia_media_dias_por_categoria"
+    ],
+    "local": [
+      "piaui_dados_locais.sinistros_individuais",
+      "estudo_morbidade_piaui_2010_2023.taxa_internacao_hospitalar_100mil_hab.por_regiao_de_saude"
+    ],
+    "municipio": [
+      "piaui_dados_locais.sinistros_individuais"
+    ],
+    "regiao": [
+      "estudo_morbidade_piaui_2010_2023.taxa_internacao_hospitalar_100mil_hab.por_regiao_de_saude",
+      "estudo_morbidade_piaui_2010_2023.taxa_internacao_hospitalar_100mil_hab.por_macrorregiao"
+    ],
+    "macrorregiao": [
+      "estudo_morbidade_piaui_2010_2023.taxa_internacao_hospitalar_100mil_hab.por_macrorregiao"
+    ],
+    "rodovia": [
+      "piaui_dados_locais.sinistros_individuais"
+    ],
+    "onde": [
+      "estudo_morbidade_piaui_2010_2023.taxa_internacao_hospitalar_100mil_hab.por_regiao_de_saude",
+      "estudo_morbidade_piaui_2010_2023.analise_espacial"
+    ],
+    "cluster": [
+      "estudo_morbidade_piaui_2010_2023.analise_espacial"
+    ],
+    "espacial": [
+      "estudo_morbidade_piaui_2010_2023.analise_espacial"
+    ],
+    "veiculo": [
+      "evento.outra_parte_envolvida",
+      "estudo_morbidade_piaui_2010_2023.taxa_internacao_hospitalar_100mil_hab.por_tipo_vitima",
+      "dados_tabnet_piaui_teresina.categorias_cid10",
+      "dados_tabnet_piaui_teresina.piaui.internacoes_por_categoria_e_ano"
+    ],
+    "moto": [
+      "evento",
+      "estudo_morbidade_piaui_2010_2023.taxa_internacao_hospitalar_100mil_hab.por_tipo_vitima"
+    ],
+    "motociclista": [
+      "estudo_morbidade_piaui_2010_2023.taxa_internacao_hospitalar_100mil_hab.por_tipo_vitima.motociclista",
+      "dados_tabnet_piaui_teresina.piaui.internacoes_por_categoria_e_ano",
+      "dados_tabnet_piaui_teresina.teresina.internacoes_por_categoria"
+    ],
+    "pedestre": [
+      "estudo_morbidade_piaui_2010_2023.taxa_internacao_hospitalar_100mil_hab.por_tipo_vitima.pedestre",
+      "dados_tabnet_piaui_teresina.piaui.internacoes_por_categoria_e_ano",
+      "dados_tabnet_piaui_teresina.teresina.internacoes_por_categoria"
+    ],
+    "ciclista": [
+      "estudo_morbidade_piaui_2010_2023.taxa_internacao_hospitalar_100mil_hab.por_tipo_vitima.ciclista",
+      "dados_tabnet_piaui_teresina.piaui.internacoes_por_categoria_e_ano",
+      "dados_tabnet_piaui_teresina.teresina.internacoes_por_categoria"
+    ],
+    "invalidez": [],
+    "lesao": [
+      "evento.natureza_lesao",
+      "evento.parte_corpo_atingida"
+    ],
+    "ferimento": [
+      "evento.natureza_lesao",
+      "evento.parte_corpo_atingida"
+    ],
+    "passageiro": [
+      "evento.tipo_vitima"
+    ],
+    "condutor": [
+      "evento.tipo_vitima"
+    ],
+    "ano": [
+      "estudo_morbidade_piaui_2010_2023.ano_com_mais_internacoes",
+      "estudo_morbidade_piaui_2010_2023.ano_com_menos_internacoes",
+      "dados_tabnet_piaui_teresina.piaui.internacoes_por_ano"
+    ],
+    "evolucao": [
+      "atendimento_evolucao.evolucao"
+    ],
+    "tendencia": [
+      "estudo_morbidade_piaui_2010_2023.taxa_internacao_hospitalar_100mil_hab.geral",
+      "estudo_morbidade_piaui_2010_2023.principais_achados"
+    ],
+    "custo": [
+      "estudo_morbidade_piaui_2010_2023.valor_medio_internacao_reais"
+    ],
+    "valor": [
+      "estudo_morbidade_piaui_2010_2023.valor_medio_internacao_reais"
+    ],
+    "gasto": [
+      "estudo_morbidade_piaui_2010_2023.valor_medio_internacao_reais"
+    ],
+    "permanencia": [
+      "estudo_morbidade_piaui_2010_2023.permanencia_media_dias"
+    ],
+    "dias internado": [
+      "estudo_morbidade_piaui_2010_2023.permanencia_media_dias"
+    ],
+    "populacao": [
+      "estudo_morbidade_piaui_2010_2023.contexto_estado_piaui"
+    ],
+    "idh": [
+      "estudo_morbidade_piaui_2010_2023.contexto_estado_piaui"
+    ],
+    "teresina": [
+      "dados_tabnet_piaui_teresina.teresina"
+    ],
+    "capital": [
+      "dados_tabnet_piaui_teresina.teresina"
+    ],
+    "tabnet": [
+      "dados_tabnet_piaui_teresina"
+    ],
+    "datasus": [
+      "dados_tabnet_piaui_teresina"
+    ],
+    "aih": [
+      "dados_tabnet_piaui_teresina.piaui.valor_medio_aih_reais_por_categoria",
+      "dados_tabnet_piaui_teresina.teresina.valor_medio_aih_reais_por_categoria"
+    ],
+    "categoria": [
+      "dados_tabnet_piaui_teresina.categorias_cid10"
+    ],
+    "cid": [
+      "dados_tabnet_piaui_teresina.categorias_cid10"
+    ],
+    "evolucao anual": [
+      "dados_tabnet_piaui_teresina.piaui.internacoes_por_ano"
+    ],
+    "serie temporal": [
+      "dados_tabnet_piaui_teresina.piaui.internacoes_por_ano"
+    ]
+  },
+  "estudo_morbidade_piaui_2010_2023": {
+    "titulo": "Tendências espaço-temporais dos indicadores de morbidade hospitalar por acidentes de transporte terrestre no Piauí, Brasil, 2010-2023",
+    "citacao": "Bastos FGT, Amorim GSB, Santos FAC, Rodrigues MTP, Mascarenhas MDM. Rev Bras Epidemiol. 2026;29:e260044. DOI: 10.1590/1980-549720260044.2",
+    "abrangencia": "Estado do Piauí - dados reais, específicos do Piauí (diferente da pesquisa VIVA 2014, que é nacional)",
+    "periodo_estudado": "2010 a 2023",
+    "fonte": "Sistema de Informações Hospitalares do SUS (SIH/SUS), via DATASUS; projeções populacionais do Ministério da Saúde",
+    "desenho_do_estudo": "Estudo ecológico de série temporal e análise espacial, com Variação Percentual Anual (VPA) e IC95% estimados por regressão de Prais-Winsten; clusters espaciais por mapas LISA",
+    "contexto_estado_piaui": {
+      "populacao": 3271199,
+      "ano_referencia_populacao": 2022,
+      "numero_municipios": 224,
+      "numero_regioes_de_saude": 12,
+      "numero_macrorregioes_de_saude": 4,
+      "area_km2": 251755.48,
+      "densidade_hab_km2": 12.99,
+      "idh": 0.69,
+      "ano_referencia_idh": 2021,
+      "posicao_idh_entre_ufs": 23,
+      "domicilios_com_motocicleta_pct_2024": 52.1,
+      "observacao": "Piauí tem a 2ª maior proporção de domicílios com motocicleta do Brasil (~597 mil domicílios em 2024)"
+    },
+    "total_internacoes_periodo": 80251,
+    "ano_com_mais_internacoes": {
+      "ano": 2016,
+      "internacoes": 7478,
+      "taxa_100mil": 230.3
+    },
+    "ano_com_menos_internacoes": {
+      "ano": 2012,
+      "internacoes": 2950,
+      "taxa_100mil": 91.8
+    },
+    "taxa_internacao_hospitalar_100mil_hab": {
+      "descricao": "Internações por acidente de transporte terrestre / população residente x 100.000. VPA = Variação Percentual Anual.",
+      "geral": {
+        "valor": 176.1,
+        "vpa_pct": 5.72,
+        "ic95_min": 1.04,
+        "ic95_max": 10.61,
+        "valor_p": 0.02,
+        "tendencia": "Crescente"
+      },
+      "por_sexo": {
+        "masculino": {
+          "valor": 292.6,
+          "vpa_pct": 5.71,
+          "ic95_min": 0.92,
+          "ic95_max": 10.71,
+          "valor_p": 0.023,
+          "tendencia": "Crescente"
+        },
+        "feminino": {
+          "valor": 65.9,
+          "vpa_pct": 6.13,
+          "ic95_min": 1.77,
+          "ic95_max": 10.69,
+          "valor_p": 0.009,
+          "tendencia": "Crescente"
+        }
+      },
+      "por_faixa_etaria": {
+        "0_a_9_anos": {
+          "valor": 24.5,
+          "vpa_pct": 5.2,
+          "ic95_min": -2.66,
+          "ic95_max": 13.7,
+          "valor_p": 0.18,
+          "tendencia": "Estável"
+        },
+        "10_a_19_anos": {
+          "valor": 124.8,
+          "vpa_pct": 4.56,
+          "ic95_min": -0.79,
+          "ic95_max": 10.19,
+          "valor_p": 0.089,
+          "tendencia": "Estável"
+        },
+        "20_a_39_anos": {
+          "valor": 279.1,
+          "vpa_pct": 4.3,
+          "ic95_min": 0.03,
+          "ic95_max": 8.74,
+          "valor_p": 0.048,
+          "tendencia": "Crescente"
+        },
+        "40_a_59_anos": {
+          "valor": 200.6,
+          "vpa_pct": 7.54,
+          "ic95_min": 2.75,
+          "ic95_max": 12.55,
+          "valor_p": 0.005,
+          "tendencia": "Crescente"
+        },
+        "60_anos_ou_mais": {
+          "valor": 112.8,
+          "vpa_pct": 8.47,
+          "ic95_min": 2.4,
+          "ic95_max": 14.9,
+          "valor_p": 0.01,
+          "tendencia": "Crescente"
+        }
+      },
+      "por_tipo_vitima": {
+        "pedestre": {
+          "valor": 12.6,
+          "vpa_pct": -0.6,
+          "ic95_min": -11.5,
+          "ic95_max": 11.64,
+          "valor_p": 0.912,
+          "tendencia": "Estável"
+        },
+        "ciclista": {
+          "valor": 4.3,
+          "vpa_pct": 13.73,
+          "ic95_min": 2.05,
+          "ic95_max": 26.74,
+          "valor_p": 0.024,
+          "tendencia": "Crescente"
+        },
+        "motociclista": {
+          "valor": 151.2,
+          "vpa_pct": 5.76,
+          "ic95_min": 1.32,
+          "ic95_max": 10.39,
+          "valor_p": 0.015,
+          "tendencia": "Crescente"
+        },
+        "ocupante_de_veiculo": {
+          "valor": 4.7,
+          "vpa_pct": 11.07,
+          "ic95_min": -0.64,
+          "ic95_max": 24.16,
+          "valor_p": 0.063,
+          "tendencia": "Estável"
+        },
+        "outros": {
+          "valor": 3.3,
+          "vpa_pct": 6.6,
+          "ic95_min": -3.53,
+          "ic95_max": 17.8,
+          "valor_p": 0.188,
+          "tendencia": "Estável"
+        }
+      },
+      "por_regiao_de_saude": {
+        "carnaubais": {
+          "valor": 272.6,
+          "vpa_pct": 12.92,
+          "ic95_min": 1.05,
+          "ic95_max": 26.19,
+          "valor_p": 0.035,
+          "tendencia": "Crescente"
+        },
+        "chapada_das_mangabeiras": {
+          "valor": 171,
+          "vpa_pct": 3.5,
+          "ic95_min": -2.96,
+          "ic95_max": 10.39,
+          "valor_p": 0.267,
+          "tendencia": "Estável"
+        },
+        "cocais": {
+          "valor": 110.1,
+          "vpa_pct": 3.41,
+          "ic95_min": -2.94,
+          "ic95_max": 10.17,
+          "valor_p": 0.271,
+          "tendencia": "Estável"
+        },
+        "entre_rios": {
+          "valor": 230.7,
+          "vpa_pct": 8.52,
+          "ic95_min": 2.13,
+          "ic95_max": 15.31,
+          "valor_p": 0.012,
+          "tendencia": "Crescente"
+        },
+        "planicie_litoranea": {
+          "valor": 84.4,
+          "vpa_pct": -1.34,
+          "ic95_min": -24.14,
+          "ic95_max": 28.32,
+          "valor_p": 0.913,
+          "tendencia": "Estável"
+        },
+        "serra_da_capivara": {
+          "valor": 181.9,
+          "vpa_pct": 7.44,
+          "ic95_min": 5.65,
+          "ic95_max": 9.26,
+          "valor_p": 0.001,
+          "tendencia": "Crescente"
+        },
+        "tabuleiros_do_alto_parnaiba": {
+          "valor": 243.1,
+          "vpa_pct": 10.63,
+          "ic95_min": 4.04,
+          "ic95_max": 17.62,
+          "valor_p": 0.004,
+          "tendencia": "Crescente"
+        },
+        "vale_do_caninde": {
+          "valor": 171.2,
+          "vpa_pct": -2.64,
+          "ic95_min": -6.62,
+          "ic95_max": 1.52,
+          "valor_p": 0.189,
+          "tendencia": "Estável"
+        },
+        "vale_do_rio_guaribas": {
+          "valor": 83.8,
+          "vpa_pct": -13.84,
+          "ic95_min": -19.29,
+          "ic95_max": -8.03,
+          "valor_p": 0.001,
+          "tendencia": "Decrescente"
+        },
+        "vale_do_sambito": {
+          "valor": 122,
+          "vpa_pct": -1.29,
+          "ic95_min": -10.03,
+          "ic95_max": 8.29,
+          "valor_p": 0.765,
+          "tendencia": "Estável"
+        },
+        "vale_dos_rios_piaui_e_itaueiras": {
+          "valor": 227.2,
+          "vpa_pct": 7.17,
+          "ic95_min": 4.24,
+          "ic95_max": 10.17,
+          "valor_p": 0.001,
+          "tendencia": "Crescente"
+        },
+        "chapada_vale_do_rio_itaim": {
+          "valor": 54.2,
+          "vpa_pct": -11.38,
+          "ic95_min": -20.04,
+          "ic95_max": -1.78,
+          "valor_p": 0.025,
+          "tendencia": "Decrescente"
+        }
+      },
+      "por_macrorregiao": {
+        "semiarido": {
+          "valor": 100.1,
+          "vpa_pct": -7.2,
+          "ic95_min": -11.62,
+          "ic95_max": -2.56,
+          "valor_p": 0.006,
+          "tendencia": "Decrescente"
+        },
+        "meio_norte": {
+          "valor": 235.6,
+          "vpa_pct": 9.03,
+          "ic95_min": 2.05,
+          "ic95_max": 16.49,
+          "valor_p": 0.015,
+          "tendencia": "Crescente"
+        },
+        "litoral": {
+          "valor": 99.5,
+          "vpa_pct": 3.92,
+          "ic95_min": -4.66,
+          "ic95_max": 13.27,
+          "valor_p": 0.35,
+          "tendencia": "Estável"
+        },
+        "cerrado": {
+          "valor": 199.5,
+          "vpa_pct": 6.23,
+          "ic95_min": 4.72,
+          "ic95_max": 7.76,
+          "valor_p": 0.001,
+          "tendencia": "Crescente"
+        }
+      }
+    },
+    "letalidade_hospitalar_pct": {
+      "descricao": "Internações que evoluíram a óbito no hospital / total de internações x 100.",
+      "obitos_hospitalares_totais_periodo": 1866,
+      "geral": {
+        "valor": 2.3,
+        "vpa_pct": -2.42,
+        "ic95_min": -5.07,
+        "ic95_max": 0.3,
+        "valor_p": 0.076,
+        "tendencia": "Estável"
+      },
+      "por_sexo": {
+        "masculino": {
+          "valor": 2.5,
+          "vpa_pct": -2.38,
+          "ic95_min": -5.15,
+          "ic95_max": 0.48,
+          "valor_p": 0.094,
+          "tendencia": "Estável"
+        },
+        "feminino": {
+          "valor": 1.6,
+          "vpa_pct": -2.11,
+          "ic95_min": -4.6,
+          "ic95_max": 0.44,
+          "valor_p": 0.096,
+          "tendencia": "Estável"
+        }
+      },
+      "por_faixa_etaria": {
+        "0_a_9_anos": {
+          "valor": 1.4,
+          "vpa_pct": -0.65,
+          "ic95_min": -7.76,
+          "ic95_max": 7.02,
+          "valor_p": 0.853,
+          "tendencia": "Estável"
+        },
+        "10_a_19_anos": {
+          "valor": 1.7,
+          "vpa_pct": -0.93,
+          "ic95_min": -5.52,
+          "ic95_max": 3.88,
+          "valor_p": 0.675,
+          "tendencia": "Estável"
+        },
+        "20_a_39_anos": {
+          "valor": 2.1,
+          "vpa_pct": -2.99,
+          "ic95_min": -5.58,
+          "ic95_max": -0.33,
+          "valor_p": 0.031,
+          "tendencia": "Decrescente"
+        },
+        "40_a_59_anos": {
+          "valor": 2.3,
+          "vpa_pct": -2.55,
+          "ic95_min": -2.55,
+          "ic95_max": 0.6,
+          "valor_p": 0.103,
+          "tendencia": "Estável"
+        },
+        "60_anos_ou_mais": {
+          "valor": 5.1,
+          "vpa_pct": -5.36,
+          "ic95_min": -8.14,
+          "ic95_max": -2.5,
+          "valor_p": 0.002,
+          "tendencia": "Decrescente"
+        }
+      },
+      "por_tipo_vitima": {
+        "pedestre": {
+          "valor": 2.4,
+          "vpa_pct": 4.33,
+          "ic95_min": -5.96,
+          "ic95_max": 15.75,
+          "valor_p": 0.391,
+          "tendencia": "Estável"
+        },
+        "ciclista": {
+          "valor": 2.4,
+          "vpa_pct": 1.82,
+          "ic95_min": -8.25,
+          "ic95_max": 12.99,
+          "valor_p": 0.713,
+          "tendencia": "Estável"
+        },
+        "motociclista": {
+          "valor": 2.3,
+          "vpa_pct": -2.93,
+          "ic95_min": -6.05,
+          "ic95_max": 0.29,
+          "valor_p": 0.071,
+          "tendencia": "Estável"
+        },
+        "ocupante_de_veiculo": {
+          "valor": 3.6,
+          "vpa_pct": 4.4,
+          "ic95_min": -5.89,
+          "ic95_max": 15.82,
+          "valor_p": 0.384,
+          "tendencia": "Estável"
+        },
+        "outros": {
+          "valor": 2.1,
+          "vpa_pct": -5.69,
+          "ic95_min": -16.93,
+          "ic95_max": 7.06,
+          "valor_p": 0.334,
+          "tendencia": "Estável"
+        }
+      },
+      "por_regiao_de_saude": {
+        "carnaubais": {
+          "valor": 2.1,
+          "vpa_pct": -5.95,
+          "ic95_min": -12.19,
+          "ic95_max": 0.72,
+          "valor_p": 0.075,
+          "tendencia": "Estável"
+        },
+        "chapada_das_mangabeiras": {
+          "valor": 1.7,
+          "vpa_pct": 1.41,
+          "ic95_min": -6.73,
+          "ic95_max": 10.25,
+          "valor_p": 0.722,
+          "tendencia": "Estável"
+        },
+        "cocais": {
+          "valor": 3.6,
+          "vpa_pct": 1.07,
+          "ic95_min": -2.82,
+          "ic95_max": 5.12,
+          "valor_p": 0.566,
+          "tendencia": "Estável"
+        },
+        "entre_rios": {
+          "valor": 2.1,
+          "vpa_pct": -5.34,
+          "ic95_min": -8.75,
+          "ic95_max": -1.81,
+          "valor_p": 0.007,
+          "tendencia": "Decrescente"
+        },
+        "planicie_litoranea": {
+          "valor": 1.3,
+          "vpa_pct": -10.5,
+          "ic95_min": -20.98,
+          "ic95_max": 1.38,
+          "valor_p": 0.076,
+          "tendencia": "Estável"
+        },
+        "serra_da_capivara": {
+          "valor": 2.5,
+          "vpa_pct": 10.42,
+          "ic95_min": 0.02,
+          "ic95_max": 21.91,
+          "valor_p": 0.05,
+          "tendencia": "Estável"
+        },
+        "tabuleiros_do_alto_parnaiba": {
+          "valor": 1.7,
+          "vpa_pct": -1.49,
+          "ic95_min": -8.19,
+          "ic95_max": 5.7,
+          "valor_p": 0.651,
+          "tendencia": "Estável"
+        },
+        "vale_do_caninde": {
+          "valor": 1.9,
+          "vpa_pct": 1.25,
+          "ic95_min": -7.87,
+          "ic95_max": 11.28,
+          "valor_p": 0.779,
+          "tendencia": "Estável"
+        },
+        "vale_do_rio_guaribas": {
+          "valor": 5.1,
+          "vpa_pct": 9.04,
+          "ic95_min": -3.19,
+          "ic95_max": 22.81,
+          "valor_p": 0.139,
+          "tendencia": "Estável"
+        },
+        "vale_do_sambito": {
+          "valor": 3.6,
+          "vpa_pct": -1.05,
+          "ic95_min": -6.43,
+          "ic95_max": 4.65,
+          "valor_p": 0.689,
+          "tendencia": "Estável"
+        },
+        "vale_dos_rios_piaui_e_itaueiras": {
+          "valor": 1.8,
+          "vpa_pct": 0.86,
+          "ic95_min": -3.94,
+          "ic95_max": 5.91,
+          "valor_p": 0.709,
+          "tendencia": "Estável"
+        },
+        "chapada_vale_do_rio_itaim": {
+          "valor": 4.8,
+          "vpa_pct": -1.35,
+          "ic95_min": -15.08,
+          "ic95_max": 14.59,
+          "valor_p": 0.846,
+          "tendencia": "Estável"
+        }
+      },
+      "por_macrorregiao": {
+        "semiarido": {
+          "valor": 3.7,
+          "vpa_pct": 2.86,
+          "ic95_min": -7.84,
+          "ic95_max": 14.8,
+          "valor_p": 0.586,
+          "tendencia": "Estável"
+        },
+        "meio_norte": {
+          "valor": 2.1,
+          "vpa_pct": -5.21,
+          "ic95_min": -8.92,
+          "ic95_max": -1.36,
+          "valor_p": 0.013,
+          "tendencia": "Decrescente"
+        },
+        "litoral": {
+          "valor": 2.8,
+          "vpa_pct": -0.03,
+          "ic95_min": -4.05,
+          "ic95_max": 4.16,
+          "valor_p": 0.988,
+          "tendencia": "Estável"
+        },
+        "cerrado": {
+          "valor": 1.9,
+          "vpa_pct": 3.17,
+          "ic95_min": -0.53,
+          "ic95_max": 7.01,
+          "valor_p": 0.087,
+          "tendencia": "Estável"
+        }
+      }
+    },
+    "valor_medio_internacao_reais": {
+      "descricao": "Total pago pelas internações / número de internações. Valores corrigidos pelo IGP-M (Banco Central).",
+      "valor_total_periodo_reais": 90200000,
+      "valor_total_periodo_corrigido_igpm_reais": 128000000,
+      "valor_medio_corrigido_igpm_reais": 1659.4,
+      "geral": {
+        "valor": 1123.92,
+        "vpa_pct": -3.17,
+        "ic95_min": -5.57,
+        "ic95_max": -0.71,
+        "valor_p": 0.016,
+        "tendencia": "Decrescente"
+      },
+      "por_sexo": {
+        "masculino": {
+          "valor": 1151.85,
+          "vpa_pct": -3.0,
+          "ic95_min": -5.43,
+          "ic95_max": -0.52,
+          "valor_p": 0.022,
+          "tendencia": "Decrescente"
+        },
+        "feminino": {
+          "valor": 1006.7,
+          "vpa_pct": -3.9,
+          "ic95_min": -6.2,
+          "ic95_max": -1.54,
+          "valor_p": 0.004,
+          "tendencia": "Decrescente"
+        }
+      },
+      "por_faixa_etaria": {
+        "0_a_9_anos": {
+          "valor": 958.08,
+          "vpa_pct": -3.44,
+          "ic95_min": -6.47,
+          "ic95_max": -0.31,
+          "valor_p": 0.034,
+          "tendencia": "Decrescente"
+        },
+        "10_a_19_anos": {
+          "valor": 1110.28,
+          "vpa_pct": -4.31,
+          "ic95_min": -6.8,
+          "ic95_max": -1.76,
+          "valor_p": 0.003,
+          "tendencia": "Decrescente"
+        },
+        "20_a_39_anos": {
+          "valor": 1126.98,
+          "vpa_pct": -2.82,
+          "ic95_min": -5.28,
+          "ic95_max": -0.29,
+          "valor_p": 0.032,
+          "tendencia": "Decrescente"
+        },
+        "40_a_59_anos": {
+          "valor": 1118.48,
+          "vpa_pct": -3.23,
+          "ic95_min": -5.38,
+          "ic95_max": -1.03,
+          "valor_p": 0.008,
+          "tendencia": "Decrescente"
+        },
+        "60_anos_ou_mais": {
+          "valor": 1187.77,
+          "vpa_pct": -3.22,
+          "ic95_min": -6.09,
+          "ic95_max": -0.26,
+          "valor_p": 0.035,
+          "tendencia": "Decrescente"
+        }
+      },
+      "por_tipo_vitima": {
+        "pedestre": {
+          "valor": 974.28,
+          "vpa_pct": -4.53,
+          "ic95_min": -14.18,
+          "ic95_max": 6.21,
+          "valor_p": 0.362,
+          "tendencia": "Estável"
+        },
+        "ciclista": {
+          "valor": 984.04,
+          "vpa_pct": 0.8,
+          "ic95_min": -1.02,
+          "ic95_max": 2.64,
+          "valor_p": 0.36,
+          "tendencia": "Estável"
+        },
+        "motociclista": {
+          "valor": 1132.64,
+          "vpa_pct": -2.96,
+          "ic95_min": -5.14,
+          "ic95_max": -0.73,
+          "valor_p": 0.014,
+          "tendencia": "Decrescente"
+        },
+        "ocupante_de_veiculo": {
+          "valor": 1258.3,
+          "vpa_pct": 2.51,
+          "ic95_min": -1.5,
+          "ic95_max": 6.68,
+          "valor_p": 0.201,
+          "tendencia": "Estável"
+        },
+        "outros": {
+          "valor": 1283.86,
+          "vpa_pct": -8.28,
+          "ic95_min": -15.15,
+          "ic95_max": -0.85,
+          "valor_p": 0.032,
+          "tendencia": "Decrescente"
+        }
+      },
+      "por_macrorregiao": {
+        "semiarido": {
+          "valor": 1191.1,
+          "vpa_pct": -1.29,
+          "ic95_min": -5.6,
+          "ic95_max": 3.21,
+          "valor_p": 0.537,
+          "tendencia": "Estável"
+        },
+        "meio_norte": {
+          "valor": 1155.13,
+          "vpa_pct": -3.69,
+          "ic95_min": -6.89,
+          "ic95_max": -0.38,
+          "valor_p": 0.032,
+          "tendencia": "Decrescente"
+        },
+        "litoral": {
+          "valor": 1124.11,
+          "vpa_pct": -7.03,
+          "ic95_min": -11.8,
+          "ic95_max": -2.0,
+          "valor_p": 0.011,
+          "tendencia": "Decrescente"
+        },
+        "cerrado": {
+          "valor": 1005.4,
+          "vpa_pct": -2.15,
+          "ic95_min": -3.66,
+          "ic95_max": -0.62,
+          "valor_p": 0.01,
+          "tendencia": "Decrescente"
+        }
+      }
+    },
+    "permanencia_media_dias": {
+      "descricao": "Total de dias de internação / número de internações.",
+      "total_dias_periodo": 392047,
+      "geral": {
+        "valor": 4.9,
+        "vpa_pct": -1.07,
+        "ic95_min": -2.96,
+        "ic95_max": 0.86,
+        "valor_p": 0.248,
+        "tendencia": "Estável"
+      },
+      "por_sexo": {
+        "masculino": {
+          "valor": 4.9,
+          "vpa_pct": -1.0,
+          "ic95_min": -2.92,
+          "ic95_max": 0.96,
+          "valor_p": 0.287,
+          "tendencia": "Estável"
+        },
+        "feminino": {
+          "valor": 4.6,
+          "vpa_pct": -1.38,
+          "ic95_min": -3.21,
+          "ic95_max": 0.48,
+          "valor_p": 0.13,
+          "tendencia": "Estável"
+        }
+      },
+      "por_faixa_etaria": {
+        "0_a_9_anos": {
+          "valor": 3.6,
+          "vpa_pct": -2.26,
+          "ic95_min": -3.29,
+          "ic95_max": -1.22,
+          "valor_p": 0.001,
+          "tendencia": "Decrescente"
+        },
+        "10_a_19_anos": {
+          "valor": 4.7,
+          "vpa_pct": -1.57,
+          "ic95_min": -2.99,
+          "ic95_max": -0.13,
+          "valor_p": 0.035,
+          "tendencia": "Decrescente"
+        },
+        "20_a_39_anos": {
+          "valor": 4.8,
+          "vpa_pct": -1.22,
+          "ic95_min": -3.04,
+          "ic95_max": 0.62,
+          "valor_p": 0.173,
+          "tendencia": "Estável"
+        },
+        "40_a_59_anos": {
+          "valor": 5.1,
+          "vpa_pct": -1.36,
+          "ic95_min": -3.5,
+          "ic95_max": 0.82,
+          "valor_p": 0.198,
+          "tendencia": "Estável"
+        },
+        "60_anos_ou_mais": {
+          "valor": 5.5,
+          "vpa_pct": -1.12,
+          "ic95_min": -3.19,
+          "ic95_max": 0.98,
+          "valor_p": 0.266,
+          "tendencia": "Estável"
+        }
+      },
+      "por_tipo_vitima": {
+        "pedestre": {
+          "valor": 5.4,
+          "vpa_pct": -0.9,
+          "ic95_min": -2.05,
+          "ic95_max": 0.27,
+          "valor_p": 0.119,
+          "tendencia": "Estável"
+        },
+        "ciclista": {
+          "valor": 4.2,
+          "vpa_pct": -1.05,
+          "ic95_min": -3.96,
+          "ic95_max": 1.93,
+          "valor_p": 0.453,
+          "tendencia": "Estável"
+        },
+        "motociclista": {
+          "valor": 4.8,
+          "vpa_pct": -1.12,
+          "ic95_min": -3.29,
+          "ic95_max": 1.1,
+          "valor_p": 0.29,
+          "tendencia": "Estável"
+        },
+        "ocupante_de_veiculo": {
+          "valor": 5.7,
+          "vpa_pct": 5.84,
+          "ic95_min": 1.15,
+          "ic95_max": 10.74,
+          "valor_p": 0.018,
+          "tendencia": "Crescente"
+        },
+        "outros": {
+          "valor": 6.3,
+          "vpa_pct": -2.9,
+          "ic95_min": -5.74,
+          "ic95_max": 0.02,
+          "valor_p": 0.051,
+          "tendencia": "Estável"
+        }
+      },
+      "por_macrorregiao": {
+        "semiarido": {
+          "valor": 5.3,
+          "vpa_pct": 1.42,
+          "ic95_min": 0.06,
+          "ic95_max": 2.81,
+          "valor_p": 0.042,
+          "tendencia": "Crescente"
+        },
+        "meio_norte": {
+          "valor": 4.2,
+          "vpa_pct": -2.9,
+          "ic95_min": -6.69,
+          "ic95_max": 1.05,
+          "valor_p": 0.134,
+          "tendencia": "Estável"
+        },
+        "litoral": {
+          "valor": 5.8,
+          "vpa_pct": -0.93,
+          "ic95_min": -2.27,
+          "ic95_max": 0.42,
+          "valor_p": 0.159,
+          "tendencia": "Estável"
+        },
+        "cerrado": {
+          "valor": 6.0,
+          "vpa_pct": 1.96,
+          "ic95_min": 0.1,
+          "ic95_max": 3.85,
+          "valor_p": 0.04,
+          "tendencia": "Crescente"
+        }
+      }
+    },
+    "analise_espacial": {
+      "metodologia": "Mapas LISA (Local Indicator of Spatial Association), matriz de vizinhança tipo 'Queen', restrita à taxa de internação hospitalar, em 3 períodos",
+      "periodo_2010_2014": "Maiores taxas concentradas em municípios do Sul do estado, com clusters alto-alto nessa região",
+      "periodo_2015_2019": "Aglomerados identificados nas áreas centrais e em parte do Norte",
+      "periodo_2020_2023": "Novas áreas com taxas elevadas nos extremos Norte e Sul; clusters baixo-baixo persistiram no Sudeste do estado"
+    },
+    "principais_achados": [
+      "Tendência crescente da taxa de internação hospitalar por acidentes de transporte terrestre no Piauí entre 2010 e 2023",
+      "Predomínio de vítimas do sexo masculino, adultos jovens (20-39 anos) e motociclistas",
+      "Taxa entre homens foi 4,4 vezes superior à das mulheres",
+      "Motociclistas tiveram taxa de internação 12 vezes superior à de pedestres",
+      "Concentração das maiores taxas na macrorregião Meio-Norte",
+      "Valor médio por internação com tendência decrescente (possível defasagem da tabela de procedimentos do SUS, não reflete redução real de custo)",
+      "Letalidade hospitalar (2,3%) e permanência média (4,9 dias) mantiveram-se estáveis no período",
+      "Clusters espaciais de taxas elevadas concentrados no Norte e no Sul do estado, sugerindo interiorização da morbidade"
+    ],
+    "limitacoes_do_estudo": [
+      "SIH/SUS cobre cerca de 75% das internações hospitalares no Brasil, podendo subestimar o total real, especialmente onde há maior participação do setor privado",
+      "Valores monetários não incluem financiamento complementar de estados e municípios, subestimando custos reais",
+      "Proporção relevante de registros com informações incompletas, particularmente no Nordeste",
+      "Desenho ecológico não permite inferências causais em nível individual"
+    ],
+    "recomendacoes": [
+      "Fortalecimento da fiscalização em rodovias das regiões com maiores taxas",
+      "Ampliação de programas de educação no trânsito direcionados a motociclistas jovens",
+      "Revisão da infraestrutura viária nas áreas de maior risco",
+      "Adequação da rede de atenção ao trauma para reduzir a letalidade hospitalar"
+    ]
+  },
+  "dados_tabnet_piaui_teresina": {
+    "observacao": "Consulta bruta do TABNET/DATASUS (SIH/SUS) sobre internacoes hospitalares por acidente de transporte terrestre (CID-10, capitulo XX, categorias V01-V89), organizada por categoria de vitima/veiculo. Cobre o estado do Piaui e, em separado, o municipio de Teresina. A serie do Piaui vai de 2009 a 2026 (2026 parcial/incompleto) e NAO usa a mesma metodologia nem o mesmo recorte temporal do artigo cientifico em 'estudo_morbidade_piaui_2010_2023' (que cobre so 2010-2023): por isso os totais nao batem exatamente entre as duas fontes. Sexo, idade, letalidade, obitos, permanencia e valor de AIH sao totais acumulados do periodo, sem quebra por ano. 'TOTAL_GERAL' e a soma de todas as categorias V01-V89; 'V01-V99' e o agregado de acidentes de transporte usado pelo DATASUS.",
+    "categorias_cid10": {
+      "V01-V99": "Acidentes de transporte",
+      "V01-V09": "Pedestre traumatizado acid transporte",
+      "V10-V19": "Ciclista traumatizado acid transporte",
+      "V20-V29": "Motociclista traumatizado acid transp",
+      "V30-V39": "Ocup triciclo motor traumatiz acid transp",
+      "V40-V49": "Ocup automóvel traumatiz acid transporte",
+      "V50-V59": "Ocup caminhonete traumat acid transporte",
+      "V60-V69": "Ocup veíc transp pesado traumat acid trans",
+      "V70-V79": "Ocup ônibus traumatizado acid transporte",
+      "V80-V89": "Outros acid transporte terrestre"
+    },
+    "piaui": {
+      "internacoes_por_ano": {
+        "total_periodo": 103721,
+        "2009": 409,
+        "2010": 3746,
+        "2011": 3625,
+        "2012": 3195,
+        "2013": 5489,
+        "2014": 5264,
+        "2015": 6958,
+        "2016": 7895,
+        "2017": 7254,
+        "2018": 7568,
+        "2019": 8106,
+        "2020": 7100,
+        "2021": 6581,
+        "2022": 6790,
+        "2023": 7631,
+        "2024": 7517,
+        "2025": 6589,
+        "2026": 2193
+      },
+      "internacoes_por_categoria_e_ano": {
+        "V01-V09": {
+          "total_periodo": 7261,
+          "2009": 29,
+          "2010": 269,
+          "2011": 315,
+          "2012": 319,
+          "2013": 484,
+          "2014": 436,
+          "2015": 554,
+          "2016": 571,
+          "2017": 810,
+          "2018": 859,
+          "2019": 688,
+          "2020": 626,
+          "2021": 355,
+          "2022": 281,
+          "2023": 239,
+          "2024": 353,
+          "2025": 177,
+          "2026": 86
+        },
+        "V10-V19": {
+          "total_periodo": 2616,
+          "2009": 7,
+          "2010": 54,
+          "2011": 51,
+          "2012": 56,
+          "2013": 43,
+          "2014": 31,
+          "2015": 137,
+          "2016": 322,
+          "2017": 236,
+          "2018": 225,
+          "2019": 201,
+          "2020": 150,
+          "2021": 172,
+          "2022": 215,
+          "2023": 250,
+          "2024": 233,
+          "2025": 177,
+          "2026": 56
+        },
+        "V20-V29": {
+          "total_periodo": 88927,
+          "2009": 367,
+          "2010": 3246,
+          "2011": 3059,
+          "2012": 2639,
+          "2013": 4784,
+          "2014": 4655,
+          "2015": 5934,
+          "2016": 6645,
+          "2017": 5841,
+          "2018": 6153,
+          "2019": 6895,
+          "2020": 6028,
+          "2021": 5671,
+          "2022": 5888,
+          "2023": 6709,
+          "2024": 6545,
+          "2025": 5873,
+          "2026": 1986
+        },
+        "V30-V39": {
+          "total_periodo": 60,
+          "2009": null,
+          "2010": 6,
+          "2011": 6,
+          "2012": 4,
+          "2013": null,
+          "2014": 1,
+          "2015": 6,
+          "2016": 6,
+          "2017": 6,
+          "2018": 4,
+          "2019": 1,
+          "2020": 2,
+          "2021": 2,
+          "2022": 5,
+          "2023": 3,
+          "2024": 4,
+          "2025": 4,
+          "2026": null
+        },
+        "V40-V49": {
+          "total_periodo": 2584,
+          "2009": 2,
+          "2010": 82,
+          "2011": 55,
+          "2012": 56,
+          "2013": 55,
+          "2014": 32,
+          "2015": 233,
+          "2016": 265,
+          "2017": 265,
+          "2018": 233,
+          "2019": 186,
+          "2020": 170,
+          "2021": 227,
+          "2022": 170,
+          "2023": 199,
+          "2024": 199,
+          "2025": 137,
+          "2026": 28
+        },
+        "V50-V59": {
+          "total_periodo": 10,
+          "2009": null,
+          "2010": null,
+          "2011": null,
+          "2012": null,
+          "2013": 1,
+          "2014": 2,
+          "2015": 2,
+          "2016": 2,
+          "2017": null,
+          "2018": null,
+          "2019": null,
+          "2020": null,
+          "2021": 1,
+          "2022": null,
+          "2023": 1,
+          "2024": null,
+          "2025": 1,
+          "2026": null
+        },
+        "V60-V69": {
+          "total_periodo": 190,
+          "2009": null,
+          "2010": null,
+          "2011": null,
+          "2012": 2,
+          "2013": null,
+          "2014": 2,
+          "2015": 13,
+          "2016": 28,
+          "2017": 35,
+          "2018": 10,
+          "2019": 20,
+          "2020": 12,
+          "2021": 15,
+          "2022": 18,
+          "2023": 14,
+          "2024": 15,
+          "2025": 5,
+          "2026": 1
+        },
+        "V70-V79": {
+          "total_periodo": 76,
+          "2009": null,
+          "2010": null,
+          "2011": 1,
+          "2012": 2,
+          "2013": null,
+          "2014": 1,
+          "2015": 11,
+          "2016": 9,
+          "2017": 12,
+          "2018": 9,
+          "2019": 3,
+          "2020": 2,
+          "2021": 8,
+          "2022": 3,
+          "2023": 10,
+          "2024": 1,
+          "2025": 1,
+          "2026": 2
+        },
+        "V80-V89": {
+          "total_periodo": 1997,
+          "2009": 4,
+          "2010": 89,
+          "2011": 138,
+          "2012": 117,
+          "2013": 122,
+          "2014": 104,
+          "2015": 68,
+          "2016": 47,
+          "2017": 49,
+          "2018": 75,
+          "2019": 112,
+          "2020": 110,
+          "2021": 130,
+          "2022": 210,
+          "2023": 206,
+          "2024": 167,
+          "2025": 215,
+          "2026": 34
+        }
+      },
+      "internacoes_por_sexo_e_categoria": {
+        "TOTAL_GERAL": {
+          "masculino": 83243,
+          "feminino": 20478,
+          "total": 103721
+        },
+        "V01-V99": {
+          "masculino": 83243,
+          "feminino": 20478,
+          "total": 103721
+        },
+        "V01-V09": {
+          "masculino": 5098,
+          "feminino": 2163,
+          "total": 7261
+        },
+        "V10-V19": {
+          "masculino": 2109,
+          "feminino": 507,
+          "total": 2616
+        },
+        "V20-V29": {
+          "masculino": 72231,
+          "feminino": 16696,
+          "total": 88927
+        },
+        "V30-V39": {
+          "masculino": 41,
+          "feminino": 19,
+          "total": 60
+        },
+        "V40-V49": {
+          "masculino": 1876,
+          "feminino": 708,
+          "total": 2584
+        },
+        "V50-V59": {
+          "masculino": 10,
+          "feminino": null,
+          "total": 10
+        },
+        "V60-V69": {
+          "masculino": 179,
+          "feminino": 11,
+          "total": 190
+        },
+        "V70-V79": {
+          "masculino": 40,
+          "feminino": 36,
+          "total": 76
+        },
+        "V80-V89": {
+          "masculino": 1659,
+          "feminino": 338,
+          "total": 1997
+        }
+      },
+      "internacoes_por_idade_e_categoria": {
+        "TOTAL_GERAL": {
+          "Menor 1 ano": 131,
+          "1 a 4 anos": 751,
+          "5 a 9 anos": 1299,
+          "10 a 14 anos": 2385,
+          "15 a 19 anos": 10353,
+          "20 a 29 anos": 29264,
+          "30 a 39 anos": 23980,
+          "40 a 49 anos": 16839,
+          "50 a 59 anos": 10395,
+          "60 a 69 anos": 5448,
+          "70 a 79 anos": 2212,
+          "80 anos e mais": 664
+        },
+        "V01-V99": {
+          "Menor 1 ano": 131,
+          "1 a 4 anos": 751,
+          "5 a 9 anos": 1299,
+          "10 a 14 anos": 2385,
+          "15 a 19 anos": 10353,
+          "20 a 29 anos": 29264,
+          "30 a 39 anos": 23980,
+          "40 a 49 anos": 16839,
+          "50 a 59 anos": 10395,
+          "60 a 69 anos": 5448,
+          "70 a 79 anos": 2212,
+          "80 anos e mais": 664
+        },
+        "V01-V09": {
+          "Menor 1 ano": 10,
+          "1 a 4 anos": 143,
+          "5 a 9 anos": 265,
+          "10 a 14 anos": 237,
+          "15 a 19 anos": 602,
+          "20 a 29 anos": 1496,
+          "30 a 39 anos": 1385,
+          "40 a 49 anos": 1087,
+          "50 a 59 anos": 839,
+          "60 a 69 anos": 576,
+          "70 a 79 anos": 424,
+          "80 anos e mais": 197
+        },
+        "V10-V19": {
+          "Menor 1 ano": 1,
+          "1 a 4 anos": 50,
+          "5 a 9 anos": 200,
+          "10 a 14 anos": 285,
+          "15 a 19 anos": 171,
+          "20 a 29 anos": 301,
+          "30 a 39 anos": 351,
+          "40 a 49 anos": 385,
+          "50 a 59 anos": 398,
+          "60 a 69 anos": 269,
+          "70 a 79 anos": 147,
+          "80 anos e mais": 58
+        },
+        "V20-V29": {
+          "Menor 1 ano": 102,
+          "1 a 4 anos": 498,
+          "5 a 9 anos": 679,
+          "10 a 14 anos": 1606,
+          "15 a 19 anos": 9145,
+          "20 a 29 anos": 26445,
+          "30 a 39 anos": 21231,
+          "40 a 49 anos": 14520,
+          "50 a 59 anos": 8566,
+          "60 a 69 anos": 4277,
+          "70 a 79 anos": 1492,
+          "80 anos e mais": 366
+        },
+        "V30-V39": {
+          "Menor 1 ano": null,
+          "1 a 4 anos": 4,
+          "5 a 9 anos": 1,
+          "10 a 14 anos": 5,
+          "15 a 19 anos": 7,
+          "20 a 29 anos": 11,
+          "30 a 39 anos": 11,
+          "40 a 49 anos": 7,
+          "50 a 59 anos": 4,
+          "60 a 69 anos": 5,
+          "70 a 79 anos": 5,
+          "80 anos e mais": null
+        },
+        "V40-V49": {
+          "Menor 1 ano": 12,
+          "1 a 4 anos": 30,
+          "5 a 9 anos": 64,
+          "10 a 14 anos": 78,
+          "15 a 19 anos": 183,
+          "20 a 29 anos": 610,
+          "30 a 39 anos": 561,
+          "40 a 49 anos": 447,
+          "50 a 59 anos": 328,
+          "60 a 69 anos": 182,
+          "70 a 79 anos": 60,
+          "80 anos e mais": 29
+        },
+        "V50-V59": {
+          "Menor 1 ano": null,
+          "1 a 4 anos": null,
+          "5 a 9 anos": null,
+          "10 a 14 anos": null,
+          "15 a 19 anos": null,
+          "20 a 29 anos": 5,
+          "30 a 39 anos": 2,
+          "40 a 49 anos": 1,
+          "50 a 59 anos": 1,
+          "60 a 69 anos": 1,
+          "70 a 79 anos": null,
+          "80 anos e mais": null
+        },
+        "V60-V69": {
+          "Menor 1 ano": null,
+          "1 a 4 anos": 1,
+          "5 a 9 anos": 2,
+          "10 a 14 anos": 6,
+          "15 a 19 anos": 12,
+          "20 a 29 anos": 31,
+          "30 a 39 anos": 56,
+          "40 a 49 anos": 40,
+          "50 a 59 anos": 22,
+          "60 a 69 anos": 12,
+          "70 a 79 anos": 7,
+          "80 anos e mais": 1
+        },
+        "V70-V79": {
+          "Menor 1 ano": null,
+          "1 a 4 anos": 2,
+          "5 a 9 anos": 1,
+          "10 a 14 anos": 3,
+          "15 a 19 anos": 2,
+          "20 a 29 anos": 12,
+          "30 a 39 anos": 13,
+          "40 a 49 anos": 10,
+          "50 a 59 anos": 13,
+          "60 a 69 anos": 11,
+          "70 a 79 anos": 8,
+          "80 anos e mais": 1
+        },
+        "V80-V89": {
+          "Menor 1 ano": 6,
+          "1 a 4 anos": 23,
+          "5 a 9 anos": 87,
+          "10 a 14 anos": 165,
+          "15 a 19 anos": 231,
+          "20 a 29 anos": 353,
+          "30 a 39 anos": 370,
+          "40 a 49 anos": 342,
+          "50 a 59 anos": 224,
+          "60 a 69 anos": 115,
+          "70 a 79 anos": 69,
+          "80 anos e mais": 12
+        }
+      },
+      "taxa_mortalidade_pct_por_categoria": {
+        "TOTAL_GERAL": 2.33,
+        "V01-V99": 2.33,
+        "V01-V09": 2.74,
+        "V10-V19": 2.68,
+        "V20-V29": 2.25,
+        "V40-V49": 3.87,
+        "V60-V69": 3.68,
+        "V70-V79": 2.63,
+        "V80-V89": 1.8
+      },
+      "obitos_por_categoria": {
+        "TOTAL_GERAL": 2415,
+        "V01-V99": 2415,
+        "V01-V09": 199,
+        "V10-V19": 70,
+        "V20-V29": 2001,
+        "V40-V49": 100,
+        "V60-V69": 7,
+        "V70-V79": 2,
+        "V80-V89": 36
+      },
+      "permanencia_media_dias_por_categoria": {
+        "TOTAL_GERAL": 5,
+        "V01-V99": 5,
+        "V01-V09": 5.5,
+        "V10-V19": 4.1,
+        "V20-V29": 4.9,
+        "V30-V39": 4.8,
+        "V40-V49": 5.6,
+        "V50-V59": 5.6,
+        "V60-V69": 6.2,
+        "V70-V79": 3.6,
+        "V80-V89": 4.1
+      },
+      "valor_medio_aih_reais_por_categoria": {
+        "TOTAL_GERAL": 1175.76,
+        "V01-V99": 1175.76,
+        "V01-V09": 1032.21,
+        "V10-V19": 1059.45,
+        "V20-V29": 1184.92,
+        "V30-V39": 1095.13,
+        "V40-V49": 1284.8,
+        "V50-V59": 726.94,
+        "V60-V69": 1705.71,
+        "V70-V79": 908.02,
+        "V80-V89": 1265.06
+      }
+    },
+    "teresina": {
+      "internacoes_por_categoria": {
+        "TOTAL_GERAL": 71541,
+        "V01-V99": 71541,
+        "V01-V09": 3683,
+        "V10-V19": 2008,
+        "V20-V29": 63727,
+        "V30-V39": 18,
+        "V40-V49": 1391,
+        "V50-V59": 3,
+        "V60-V69": 177,
+        "V70-V79": 61,
+        "V80-V89": 773
+      },
+      "internacoes_por_sexo_e_categoria": {
+        "TOTAL_GERAL": {
+          "masculino": 58413,
+          "feminino": 13428,
+          "total": 71841
+        },
+        "V01-V99": {
+          "masculino": 58413,
+          "feminino": 13428,
+          "total": 71841
+        },
+        "V01-V09": {
+          "masculino": 1789,
+          "feminino": 894,
+          "total": 2683
+        },
+        "V10-V19": {
+          "masculino": 1648,
+          "feminino": 360,
+          "total": 2008
+        },
+        "V20-V29": {
+          "masculino": 52172,
+          "feminino": 11555,
+          "total": 63727
+        },
+        "V30-V39": {
+          "masculino": 12,
+          "feminino": 6,
+          "total": 18
+        },
+        "V40-V49": {
+          "masculino": 974,
+          "feminino": 417,
+          "total": 1391
+        },
+        "V50-V59": {
+          "masculino": 3,
+          "feminino": null,
+          "total": 3
+        },
+        "V60-V69": {
+          "masculino": 166,
+          "feminino": 11,
+          "total": 177
+        },
+        "V70-V79": {
+          "masculino": 34,
+          "feminino": 27,
+          "total": 61
+        },
+        "V80-V89": {
+          "masculino": 615,
+          "feminino": 158,
+          "total": 773
+        }
+      },
+      "internacoes_por_idade_e_categoria": {
+        "TOTAL_GERAL": {
+          "Menor 1 ano": 78,
+          "1 a 4 anos": 491,
+          "5 a 9 anos": 779,
+          "10 a 14 anos": 1427,
+          "15 a 19 anos": 6966,
+          "20 a 29 anos": 20912,
+          "30 a 39 anos": 17020,
+          "40 a 49 anos": 11774,
+          "50 a 59 anos": 7128,
+          "60 a 69 anos": 3589,
+          "70 a 79 anos": 1371,
+          "80 anos e mais": 306
+        },
+        "V01-V99": {
+          "Menor 1 ano": 78,
+          "1 a 4 anos": 491,
+          "5 a 9 anos": 779,
+          "10 a 14 anos": 1427,
+          "15 a 19 anos": 6966,
+          "20 a 29 anos": 20912,
+          "30 a 39 anos": 17020,
+          "40 a 49 anos": 11774,
+          "50 a 59 anos": 7128,
+          "60 a 69 anos": 3589,
+          "70 a 79 anos": 1371,
+          "80 anos e mais": 306
+        },
+        "V01-V09": {
+          "Menor 1 ano": 3,
+          "1 a 4 anos": 108,
+          "5 a 9 anos": 193,
+          "10 a 14 anos": 133,
+          "15 a 19 anos": 114,
+          "20 a 29 anos": 267,
+          "30 a 39 anos": 355,
+          "40 a 49 anos": 411,
+          "50 a 59 anos": 425,
+          "60 a 69 anos": 332,
+          "70 a 79 anos": 253,
+          "80 anos e mais": 89
+        },
+        "V10-V19": {
+          "Menor 1 ano": 1,
+          "1 a 4 anos": 42,
+          "5 a 9 anos": 119,
+          "10 a 14 anos": 199,
+          "15 a 19 anos": 121,
+          "20 a 29 anos": 211,
+          "30 a 39 anos": 273,
+          "40 a 49 anos": 316,
+          "50 a 59 anos": 325,
+          "60 a 69 anos": 237,
+          "70 a 79 anos": 118,
+          "80 anos e mais": 46
+        },
+        "V20-V29": {
+          "Menor 1 ano": 67,
+          "1 a 4 anos": 315,
+          "5 a 9 anos": 410,
+          "10 a 14 anos": 1003,
+          "15 a 19 anos": 6548,
+          "20 a 29 anos": 19883,
+          "30 a 39 anos": 15877,
+          "40 a 49 anos": 10618,
+          "50 a 59 anos": 6066,
+          "60 a 69 anos": 2866,
+          "70 a 79 anos": 923,
+          "80 anos e mais": 152
+        },
+        "V30-V39": {
+          "Menor 1 ano": null,
+          "1 a 4 anos": null,
+          "5 a 9 anos": null,
+          "10 a 14 anos": null,
+          "15 a 19 anos": 2,
+          "20 a 29 anos": 6,
+          "30 a 39 anos": 2,
+          "40 a 49 anos": 3,
+          "50 a 59 anos": 1,
+          "60 a 69 anos": 2,
+          "70 a 79 anos": 2,
+          "80 anos e mais": null
+        },
+        "V40-V49": {
+          "Menor 1 ano": 6,
+          "1 a 4 anos": 19,
+          "5 a 9 anos": 37,
+          "10 a 14 anos": 44,
+          "15 a 19 anos": 94,
+          "20 a 29 anos": 342,
+          "30 a 39 anos": 288,
+          "40 a 49 anos": 223,
+          "50 a 59 anos": 194,
+          "60 a 69 anos": 97,
+          "70 a 79 anos": 33,
+          "80 anos e mais": 14
+        },
+        "V50-V59": {
+          "Menor 1 ano": null,
+          "1 a 4 anos": null,
+          "5 a 9 anos": null,
+          "10 a 14 anos": null,
+          "15 a 19 anos": null,
+          "20 a 29 anos": 3,
+          "30 a 39 anos": null,
+          "40 a 49 anos": null,
+          "50 a 59 anos": null,
+          "60 a 69 anos": null,
+          "70 a 79 anos": null,
+          "80 anos e mais": null
+        },
+        "V60-V69": {
+          "Menor 1 ano": null,
+          "1 a 4 anos": 1,
+          "5 a 9 anos": 1,
+          "10 a 14 anos": 5,
+          "15 a 19 anos": 11,
+          "20 a 29 anos": 30,
+          "30 a 39 anos": 53,
+          "40 a 49 anos": 38,
+          "50 a 59 anos": 20,
+          "60 a 69 anos": 11,
+          "70 a 79 anos": 6,
+          "80 anos e mais": 1
+        },
+        "V70-V79": {
+          "Menor 1 ano": null,
+          "1 a 4 anos": 1,
+          "5 a 9 anos": 1,
+          "10 a 14 anos": 2,
+          "15 a 19 anos": 2,
+          "20 a 29 anos": 8,
+          "30 a 39 anos": 10,
+          "40 a 49 anos": 8,
+          "50 a 59 anos": 13,
+          "60 a 69 anos": 9,
+          "70 a 79 anos": 6,
+          "80 anos e mais": 1
+        },
+        "V80-V89": {
+          "Menor 1 ano": 1,
+          "1 a 4 anos": 5,
+          "5 a 9 anos": 18,
+          "10 a 14 anos": 41,
+          "15 a 19 anos": 76,
+          "20 a 29 anos": 165,
+          "30 a 39 anos": 162,
+          "40 a 49 anos": 157,
+          "50 a 59 anos": 84,
+          "60 a 69 anos": 35,
+          "70 a 79 anos": 28,
+          "80 anos e mais": 1
+        }
+      },
+      "taxa_mortalidade_pct_por_categoria": {
+        "TOTAL_GERAL": 2.84,
+        "V01-V99": 2.84,
+        "V01-V09": 5.35,
+        "V10-V19": 3.29,
+        "V20-V29": 2.67,
+        "V40-V49": 4.31,
+        "V60-V69": 2.39,
+        "V70-V79": 1.64,
+        "V80-V89": 2.1
+      },
+      "obitos_por_categoria": {
+        "TOTAL_GERAL": 2037,
+        "V01-V99": 2037,
+        "V01-V09": 197,
+        "V10-V19": 66,
+        "V20-V29": 1701,
+        "V40-V49": 60,
+        "V60-V69": 4,
+        "V70-V79": 1,
+        "V80-V89": 24
+      },
+      "permanencia_media_dias_por_categoria": {
+        "TOTAL_GERAL": 4.8,
+        "V01-V99": 4.8,
+        "V01-V09": 5.3,
+        "V10-V19": 4.4,
+        "V20-V29": 4.8,
+        "V30-V39": 5.1,
+        "V40-V49": 5.1,
+        "V50-V59": 7,
+        "V60-V69": 6.1,
+        "V70-V79": 3.6,
+        "V80-V89": 4.2
+      },
+      "valor_medio_aih_reais_por_categoria": {
+        "TOTAL_GERAL": 1378.13,
+        "V01-V99": 1378.13,
+        "V01-V09": 1670.88,
+        "V10-V19": 1229.3,
+        "V20-V29": 1357.36,
+        "V30-V39": 1054.22,
+        "V40-V49": 1544.05,
+        "V50-V59": 1002.61,
+        "V60-V69": 1768.38,
+        "V70-V79": 940.97,
+        "V80-V89": 2143.88
+      }
+    }
+  }
+}
