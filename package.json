@@ -1,0 +1,12 @@
+{
+  "name": "infotransito-piaui",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Observatório de sinistros de trânsito do Piauí (Infotrânsito, UFPI)",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

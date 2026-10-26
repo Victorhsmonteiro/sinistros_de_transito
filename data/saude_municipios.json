@@ -1,0 +1,1701 @@
+{
+ "fonte": {
+  "obitos": "SIM/DATASUS (TABNET), óbitos por residência, CID-10 V01-V89 (acidentes de transporte terrestre), Piauí, 2020-2024",
+  "internacoes": "SIH/SUS (TABNET), internações por residência, CID-10 V01-V89, Piauí, 2020-2024",
+  "populacao": "IBGE, Censo Demográfico 2022 (tabela 4714)",
+  "consultado_em": "2026-10-25"
+ },
+ "anos": [
+  2020,
+  2021,
+  2022,
+  2023,
+  2024
+ ],
+ "totais_tabnet": {
+  "obitos": 4822,
+  "obitos_municipio_ignorado": 26,
+  "internacoes": 32792,
+  "internacoes_municipio_ignorado": 0
+ },
+ "municipios": {
+  "220005": {
+   "nome_tabnet": "ACAUA",
+   "regiao_de_saude": "22012 Chapada Vale do Rio Itaim",
+   "obitos": 9,
+   "internacoes": 13,
+   "populacao_2022": 6420
+  },
+  "220010": {
+   "nome_tabnet": "AGRICOLANDIA",
+   "regiao_de_saude": "22004 Entre Rios",
+   "obitos": 11,
+   "internacoes": 73,
+   "populacao_2022": 4940
+  },
+  "220020": {
+   "nome_tabnet": "AGUA BRANCA",
+   "regiao_de_saude": "22004 Entre Rios",
+   "obitos": 27,
+   "internacoes": 227,
+   "populacao_2022": 17573
+  },
+  "220025": {
+   "nome_tabnet": "ALAGOINHA DO PIAUI",
+   "regiao_de_saude": "22009 Vale do Rio Guaribas",
+   "obitos": 16,
+   "internacoes": 12,
+   "populacao_2022": 6819
+  },
+  "220027": {
+   "nome_tabnet": "ALEGRETE DO PIAUI",
+   "regiao_de_saude": "22009 Vale do Rio Guaribas",
+   "obitos": 8,
+   "internacoes": 5,
+   "populacao_2022": 4634
+  },
+  "220030": {
+   "nome_tabnet": "ALTO LONGA",
+   "regiao_de_saude": "22004 Entre Rios",
+   "obitos": 22,
+   "internacoes": 151,
+   "populacao_2022": 13479
+  },
+  "220040": {
+   "nome_tabnet": "ALTOS",
+   "regiao_de_saude": "22004 Entre Rios",
+   "obitos": 69,
+   "internacoes": 560,
+   "populacao_2022": 47453
+  },
+  "220045": {
+   "nome_tabnet": "ALVORADA DO GURGUEIA",
+   "regiao_de_saude": "22002 Chapada das Mangabeiras",
+   "obitos": 13,
+   "internacoes": 46,
+   "populacao_2022": 5322
+  },
+  "220050": {
+   "nome_tabnet": "AMARANTE",
+   "regiao_de_saude": "22004 Entre Rios",
+   "obitos": 26,
+   "internacoes": 294,
+   "populacao_2022": 17234
+  },
+  "220060": {
+   "nome_tabnet": "ANGICAL DO PIAUI",
+   "regiao_de_saude": "22004 Entre Rios",
+   "obitos": 10,
+   "internacoes": 82,
+   "populacao_2022": 6827
+  },
+  "220070": {
+   "nome_tabnet": "ANISIO DE ABREU",
+   "regiao_de_saude": "22006 Serra da Capivara",
+   "obitos": 21,
+   "internacoes": 116,
+   "populacao_2022": 9407
+  },
+  "220080": {
+   "nome_tabnet": "ANTONIO ALMEIDA",
+   "regiao_de_saude": "22007 Tabuleiros do Alto Parnaíba",
+   "obitos": 7,
+   "internacoes": 45,
+   "populacao_2022": 3152
+  },
+  "220090": {
+   "nome_tabnet": "AROAZES",
+   "regiao_de_saude": "22010 Vale do Sambito",
+   "obitos": 10,
+   "internacoes": 13,
+   "populacao_2022": 5369
+  },
+  "220095": {
+   "nome_tabnet": "AROEIRAS DO ITAIM",
+   "regiao_de_saude": "22009 Vale do Rio Guaribas",
+   "obitos": 3,
+   "internacoes": 2,
+   "populacao_2022": 2690
+  },
+  "220100": {
+   "nome_tabnet": "ARRAIAL",
+   "regiao_de_saude": "22011 Vale dos Rios Piauí e Itaueiras",
+   "obitos": 6,
+   "internacoes": 81,
+   "populacao_2022": 4520
+  },
+  "220105": {
+   "nome_tabnet": "ASSUNCAO DO PIAUI",
+   "regiao_de_saude": "22001 Carnaubais",
+   "obitos": 20,
+   "internacoes": 97,
+   "populacao_2022": 7452
+  },
+  "220110": {
+   "nome_tabnet": "AVELINO LOPES",
+   "regiao_de_saude": "22002 Chapada das Mangabeiras",
+   "obitos": 7,
+   "internacoes": 158,
+   "populacao_2022": 10866
+  },
+  "220115": {
+   "nome_tabnet": "BAIXA GRANDE DO RIBEIRO",
+   "regiao_de_saude": "22007 Tabuleiros do Alto Parnaíba",
+   "obitos": 46,
+   "internacoes": 230,
+   "populacao_2022": 13272
+  },
+  "220117": {
+   "nome_tabnet": "BARRA D'ALCANTARA",
+   "regiao_de_saude": "22010 Vale do Sambito",
+   "obitos": 8,
+   "internacoes": 12,
+   "populacao_2022": 3995
+  },
+  "220120": {
+   "nome_tabnet": "BARRAS",
+   "regiao_de_saude": "22003 Cocais",
+   "obitos": 72,
+   "internacoes": 337,
+   "populacao_2022": 47938
+  },
+  "220130": {
+   "nome_tabnet": "BARREIRAS DO PIAUI",
+   "regiao_de_saude": "22002 Chapada das Mangabeiras",
+   "obitos": 5,
+   "internacoes": 36,
+   "populacao_2022": 3264
+  },
+  "220140": {
+   "nome_tabnet": "BARRO DURO",
+   "regiao_de_saude": "22004 Entre Rios",
+   "obitos": 11,
+   "internacoes": 67,
+   "populacao_2022": 6640
+  },
+  "220150": {
+   "nome_tabnet": "BATALHA",
+   "regiao_de_saude": "22003 Cocais",
+   "obitos": 55,
+   "internacoes": 136,
+   "populacao_2022": 26300
+  },
+  "220155": {
+   "nome_tabnet": "BELA VISTA DO PIAUI",
+   "regiao_de_saude": "22008 Vale do Canindé",
+   "obitos": 6,
+   "internacoes": 15,
+   "populacao_2022": 4091
+  },
+  "220157": {
+   "nome_tabnet": "BELEM DO PIAUI",
+   "regiao_de_saude": "22012 Chapada Vale do Rio Itaim",
+   "obitos": 8,
+   "internacoes": 8,
+   "populacao_2022": 3423
+  },
+  "220160": {
+   "nome_tabnet": "BENEDITINOS",
+   "regiao_de_saude": "22004 Entre Rios",
+   "obitos": 10,
+   "internacoes": 91,
+   "populacao_2022": 9929
+  },
+  "220170": {
+   "nome_tabnet": "BERTOLINIA",
+   "regiao_de_saude": "22011 Vale dos Rios Piauí e Itaueiras",
+   "obitos": 14,
+   "internacoes": 66,
+   "populacao_2022": 5562
+  },
+  "220173": {
+   "nome_tabnet": "BETANIA DO PIAUI",
+   "regiao_de_saude": "22012 Chapada Vale do Rio Itaim",
+   "obitos": 7,
+   "internacoes": 11,
+   "populacao_2022": 6220
+  },
+  "220177": {
+   "nome_tabnet": "BOA HORA",
+   "regiao_de_saude": "22001 Carnaubais",
+   "obitos": 19,
+   "internacoes": 93,
+   "populacao_2022": 6902
+  },
+  "220180": {
+   "nome_tabnet": "BOCAINA",
+   "regiao_de_saude": "22009 Vale do Rio Guaribas",
+   "obitos": 14,
+   "internacoes": 6,
+   "populacao_2022": 4078
+  },
+  "220190": {
+   "nome_tabnet": "BOM JESUS",
+   "regiao_de_saude": "22002 Chapada das Mangabeiras",
+   "obitos": 45,
+   "internacoes": 445,
+   "populacao_2022": 28796
+  },
+  "220191": {
+   "nome_tabnet": "BOM PRINCIPIO DO PIAUI",
+   "regiao_de_saude": "22005 Planície Litorânea",
+   "obitos": 14,
+   "internacoes": 13,
+   "populacao_2022": 5636
+  },
+  "220192": {
+   "nome_tabnet": "BONFIM DO PIAUI",
+   "regiao_de_saude": "22006 Serra da Capivara",
+   "obitos": 13,
+   "internacoes": 82,
+   "populacao_2022": 5913
+  },
+  "220194": {
+   "nome_tabnet": "BOQUEIRAO DO PIAUI",
+   "regiao_de_saude": "22001 Carnaubais",
+   "obitos": 13,
+   "internacoes": 99,
+   "populacao_2022": 6545
+  },
+  "220196": {
+   "nome_tabnet": "BRASILEIRA",
+   "regiao_de_saude": "22003 Cocais",
+   "obitos": 13,
+   "internacoes": 43,
+   "populacao_2022": 8436
+  },
+  "220198": {
+   "nome_tabnet": "BREJO DO PIAUI",
+   "regiao_de_saude": "22011 Vale dos Rios Piauí e Itaueiras",
+   "obitos": 5,
+   "internacoes": 59,
+   "populacao_2022": 3904
+  },
+  "220200": {
+   "nome_tabnet": "BURITI DOS LOPES",
+   "regiao_de_saude": "22005 Planície Litorânea",
+   "obitos": 33,
+   "internacoes": 42,
+   "populacao_2022": 19654
+  },
+  "220202": {
+   "nome_tabnet": "BURITI DOS MONTES",
+   "regiao_de_saude": "22001 Carnaubais",
+   "obitos": 6,
+   "internacoes": 67,
+   "populacao_2022": 7434
+  },
+  "220205": {
+   "nome_tabnet": "CABECEIRAS DO PIAUI",
+   "regiao_de_saude": "22001 Carnaubais",
+   "obitos": 12,
+   "internacoes": 101,
+   "populacao_2022": 10212
+  },
+  "220207": {
+   "nome_tabnet": "CAJAZEIRAS DO PIAUI",
+   "regiao_de_saude": "22008 Vale do Canindé",
+   "obitos": 10,
+   "internacoes": 32,
+   "populacao_2022": 3108
+  },
+  "220208": {
+   "nome_tabnet": "CAJUEIRO DA PRAIA",
+   "regiao_de_saude": "22005 Planície Litorânea",
+   "obitos": 8,
+   "internacoes": 18,
+   "populacao_2022": 7957
+  },
+  "220209": {
+   "nome_tabnet": "CALDEIRAO GRANDE DO PIAUI",
+   "regiao_de_saude": "22012 Chapada Vale do Rio Itaim",
+   "obitos": 11,
+   "internacoes": 9,
+   "populacao_2022": 5503
+  },
+  "220210": {
+   "nome_tabnet": "CAMPINAS DO PIAUI",
+   "regiao_de_saude": "22008 Vale do Canindé",
+   "obitos": 16,
+   "internacoes": 18,
+   "populacao_2022": 4938
+  },
+  "220211": {
+   "nome_tabnet": "CAMPO ALEGRE DO FIDALGO",
+   "regiao_de_saude": "22006 Serra da Capivara",
+   "obitos": 6,
+   "internacoes": 74,
+   "populacao_2022": 4616
+  },
+  "220213": {
+   "nome_tabnet": "CAMPO GRANDE DO PIAUI",
+   "regiao_de_saude": "22009 Vale do Rio Guaribas",
+   "obitos": 17,
+   "internacoes": 18,
+   "populacao_2022": 6020
+  },
+  "220217": {
+   "nome_tabnet": "CAMPO LARGO DO PIAUI",
+   "regiao_de_saude": "22003 Cocais",
+   "obitos": 3,
+   "internacoes": 22,
+   "populacao_2022": 7419
+  },
+  "220220": {
+   "nome_tabnet": "CAMPO MAIOR",
+   "regiao_de_saude": "22001 Carnaubais",
+   "obitos": 75,
+   "internacoes": 744,
+   "populacao_2022": 45793
+  },
+  "220225": {
+   "nome_tabnet": "CANAVIEIRA",
+   "regiao_de_saude": "22011 Vale dos Rios Piauí e Itaueiras",
+   "obitos": 3,
+   "internacoes": 59,
+   "populacao_2022": 3414
+  },
+  "220230": {
+   "nome_tabnet": "CANTO DO BURITI",
+   "regiao_de_saude": "22011 Vale dos Rios Piauí e Itaueiras",
+   "obitos": 41,
+   "internacoes": 268,
+   "populacao_2022": 19365
+  },
+  "220240": {
+   "nome_tabnet": "CAPITAO DE CAMPOS",
+   "regiao_de_saude": "22003 Cocais",
+   "obitos": 22,
+   "internacoes": 92,
+   "populacao_2022": 11100
+  },
+  "220245": {
+   "nome_tabnet": "CAPITAO GERVASIO OLIVEIRA",
+   "regiao_de_saude": "22006 Serra da Capivara",
+   "obitos": 12,
+   "internacoes": 77,
+   "populacao_2022": 3974
+  },
+  "220250": {
+   "nome_tabnet": "CARACOL",
+   "regiao_de_saude": "22006 Serra da Capivara",
+   "obitos": 18,
+   "internacoes": 150,
+   "populacao_2022": 10318
+  },
+  "220253": {
+   "nome_tabnet": "CARAUBAS DO PIAUI",
+   "regiao_de_saude": "22005 Planície Litorânea",
+   "obitos": 9,
+   "internacoes": 17,
+   "populacao_2022": 5630
+  },
+  "220255": {
+   "nome_tabnet": "CARIDADE DO PIAUI",
+   "regiao_de_saude": "22012 Chapada Vale do Rio Itaim",
+   "obitos": 9,
+   "internacoes": 13,
+   "populacao_2022": 5033
+  },
+  "220260": {
+   "nome_tabnet": "CASTELO DO PIAUI",
+   "regiao_de_saude": "22001 Carnaubais",
+   "obitos": 22,
+   "internacoes": 237,
+   "populacao_2022": 19288
+  },
+  "220265": {
+   "nome_tabnet": "CAXINGO",
+   "regiao_de_saude": "22005 Planície Litorânea",
+   "obitos": 8,
+   "internacoes": 14,
+   "populacao_2022": 5496
+  },
+  "220270": {
+   "nome_tabnet": "COCAL",
+   "regiao_de_saude": "22005 Planície Litorânea",
+   "obitos": 54,
+   "internacoes": 88,
+   "populacao_2022": 28212
+  },
+  "220271": {
+   "nome_tabnet": "COCAL DE TELHA",
+   "regiao_de_saude": "22001 Carnaubais",
+   "obitos": 4,
+   "internacoes": 49,
+   "populacao_2022": 4911
+  },
+  "220272": {
+   "nome_tabnet": "COCAL DOS ALVES",
+   "regiao_de_saude": "22005 Planície Litorânea",
+   "obitos": 5,
+   "internacoes": 5,
+   "populacao_2022": 6386
+  },
+  "220273": {
+   "nome_tabnet": "COIVARAS",
+   "regiao_de_saude": "22004 Entre Rios",
+   "obitos": 6,
+   "internacoes": 45,
+   "populacao_2022": 4117
+  },
+  "220275": {
+   "nome_tabnet": "COLONIA DO GURGUEIA",
+   "regiao_de_saude": "22011 Vale dos Rios Piauí e Itaueiras",
+   "obitos": 12,
+   "internacoes": 66,
+   "populacao_2022": 6150
+  },
+  "220277": {
+   "nome_tabnet": "COLONIA DO PIAUI",
+   "regiao_de_saude": "22008 Vale do Canindé",
+   "obitos": 10,
+   "internacoes": 72,
+   "populacao_2022": 6994
+  },
+  "220280": {
+   "nome_tabnet": "CONCEICAO DO CANINDE",
+   "regiao_de_saude": "22008 Vale do Canindé",
+   "obitos": 14,
+   "internacoes": 18,
+   "populacao_2022": 4932
+  },
+  "220285": {
+   "nome_tabnet": "CORONEL JOSE DIAS",
+   "regiao_de_saude": "22006 Serra da Capivara",
+   "obitos": 9,
+   "internacoes": 67,
+   "populacao_2022": 4250
+  },
+  "220290": {
+   "nome_tabnet": "CORRENTE",
+   "regiao_de_saude": "22002 Chapada das Mangabeiras",
+   "obitos": 65,
+   "internacoes": 295,
+   "populacao_2022": 27278
+  },
+  "220300": {
+   "nome_tabnet": "CRISTALANDIA DO PIAUI",
+   "regiao_de_saude": "22002 Chapada das Mangabeiras",
+   "obitos": 8,
+   "internacoes": 64,
+   "populacao_2022": 7356
+  },
+  "220310": {
+   "nome_tabnet": "CRISTINO CASTRO",
+   "regiao_de_saude": "22002 Chapada das Mangabeiras",
+   "obitos": 15,
+   "internacoes": 129,
+   "populacao_2022": 10503
+  },
+  "220320": {
+   "nome_tabnet": "CURIMATA",
+   "regiao_de_saude": "22002 Chapada das Mangabeiras",
+   "obitos": 22,
+   "internacoes": 149,
+   "populacao_2022": 11270
+  },
+  "220323": {
+   "nome_tabnet": "CURRAIS",
+   "regiao_de_saude": "22002 Chapada das Mangabeiras",
+   "obitos": 5,
+   "internacoes": 71,
+   "populacao_2022": 4854
+  },
+  "220325": {
+   "nome_tabnet": "CURRALINHOS",
+   "regiao_de_saude": "22004 Entre Rios",
+   "obitos": 3,
+   "internacoes": 54,
+   "populacao_2022": 4413
+  },
+  "220327": {
+   "nome_tabnet": "CURRAL NOVO DO PIAUI",
+   "regiao_de_saude": "22012 Chapada Vale do Rio Itaim",
+   "obitos": 11,
+   "internacoes": 3,
+   "populacao_2022": 5073
+  },
+  "220330": {
+   "nome_tabnet": "DEMERVAL LOBAO",
+   "regiao_de_saude": "22004 Entre Rios",
+   "obitos": 20,
+   "internacoes": 200,
+   "populacao_2022": 16352
+  },
+  "220335": {
+   "nome_tabnet": "DIRCEU ARCOVERDE",
+   "regiao_de_saude": "22006 Serra da Capivara",
+   "obitos": 12,
+   "internacoes": 91,
+   "populacao_2022": 7054
+  },
+  "220340": {
+   "nome_tabnet": "DOM EXPEDITO LOPES",
+   "regiao_de_saude": "22009 Vale do Rio Guaribas",
+   "obitos": 15,
+   "internacoes": 11,
+   "populacao_2022": 6320
+  },
+  "220342": {
+   "nome_tabnet": "DOMINGOS MOURAO",
+   "regiao_de_saude": "22003 Cocais",
+   "obitos": 9,
+   "internacoes": 30,
+   "populacao_2022": 4075
+  },
+  "220345": {
+   "nome_tabnet": "DOM INOCENCIO",
+   "regiao_de_saude": "22006 Serra da Capivara",
+   "obitos": 11,
+   "internacoes": 80,
+   "populacao_2022": 9159
+  },
+  "220350": {
+   "nome_tabnet": "ELESBAO VELOSO",
+   "regiao_de_saude": "22010 Vale do Sambito",
+   "obitos": 15,
+   "internacoes": 67,
+   "populacao_2022": 13607
+  },
+  "220360": {
+   "nome_tabnet": "ELISEU MARTINS",
+   "regiao_de_saude": "22011 Vale dos Rios Piauí e Itaueiras",
+   "obitos": 9,
+   "internacoes": 49,
+   "populacao_2022": 4377
+  },
+  "220370": {
+   "nome_tabnet": "ESPERANTINA",
+   "regiao_de_saude": "22003 Cocais",
+   "obitos": 84,
+   "internacoes": 231,
+   "populacao_2022": 40970
+  },
+  "220375": {
+   "nome_tabnet": "FARTURA DO PIAUI",
+   "regiao_de_saude": "22006 Serra da Capivara",
+   "obitos": 9,
+   "internacoes": 68,
+   "populacao_2022": 5284
+  },
+  "220380": {
+   "nome_tabnet": "FLORES DO PIAUI",
+   "regiao_de_saude": "22011 Vale dos Rios Piauí e Itaueiras",
+   "obitos": 5,
+   "internacoes": 66,
+   "populacao_2022": 4414
+  },
+  "220385": {
+   "nome_tabnet": "FLORESTA DO PIAUI",
+   "regiao_de_saude": "22008 Vale do Canindé",
+   "obitos": 3,
+   "internacoes": 10,
+   "populacao_2022": 2333
+  },
+  "220390": {
+   "nome_tabnet": "FLORIANO",
+   "regiao_de_saude": "22011 Vale dos Rios Piauí e Itaueiras",
+   "obitos": 89,
+   "internacoes": 1074,
+   "populacao_2022": 62036
+  },
+  "220400": {
+   "nome_tabnet": "FRANCINOPOLIS",
+   "regiao_de_saude": "22010 Vale do Sambito",
+   "obitos": 8,
+   "internacoes": 21,
+   "populacao_2022": 4505
+  },
+  "220410": {
+   "nome_tabnet": "FRANCISCO AYRES",
+   "regiao_de_saude": "22011 Vale dos Rios Piauí e Itaueiras",
+   "obitos": 3,
+   "internacoes": 73,
+   "populacao_2022": 4412
+  },
+  "220415": {
+   "nome_tabnet": "FRANCISCO MACEDO",
+   "regiao_de_saude": "22012 Chapada Vale do Rio Itaim",
+   "obitos": 6,
+   "internacoes": 1,
+   "populacao_2022": 2929
+  },
+  "220420": {
+   "nome_tabnet": "FRANCISCO SANTOS",
+   "regiao_de_saude": "22009 Vale do Rio Guaribas",
+   "obitos": 16,
+   "internacoes": 7,
+   "populacao_2022": 8237
+  },
+  "220430": {
+   "nome_tabnet": "FRONTEIRAS",
+   "regiao_de_saude": "22009 Vale do Rio Guaribas",
+   "obitos": 14,
+   "internacoes": 15,
+   "populacao_2022": 10259
+  },
+  "220435": {
+   "nome_tabnet": "GEMINIANO",
+   "regiao_de_saude": "22009 Vale do Rio Guaribas",
+   "obitos": 29,
+   "internacoes": 7,
+   "populacao_2022": 5445
+  },
+  "220440": {
+   "nome_tabnet": "GILBUES",
+   "regiao_de_saude": "22002 Chapada das Mangabeiras",
+   "obitos": 10,
+   "internacoes": 102,
+   "populacao_2022": 10892
+  },
+  "220450": {
+   "nome_tabnet": "GUADALUPE",
+   "regiao_de_saude": "22011 Vale dos Rios Piauí e Itaueiras",
+   "obitos": 12,
+   "internacoes": 304,
+   "populacao_2022": 10270
+  },
+  "220455": {
+   "nome_tabnet": "GUARIBAS",
+   "regiao_de_saude": "22006 Serra da Capivara",
+   "obitos": 10,
+   "internacoes": 58,
+   "populacao_2022": 4276
+  },
+  "220460": {
+   "nome_tabnet": "HUGO NAPOLEAO",
+   "regiao_de_saude": "22004 Entre Rios",
+   "obitos": 3,
+   "internacoes": 42,
+   "populacao_2022": 3518
+  },
+  "220465": {
+   "nome_tabnet": "ILHA GRANDE",
+   "regiao_de_saude": "22005 Planície Litorânea",
+   "obitos": 6,
+   "internacoes": 19,
+   "populacao_2022": 9274
+  },
+  "220470": {
+   "nome_tabnet": "INHUMA",
+   "regiao_de_saude": "22010 Vale do Sambito",
+   "obitos": 28,
+   "internacoes": 41,
+   "populacao_2022": 14958
+  },
+  "220480": {
+   "nome_tabnet": "IPIRANGA DO PIAUI",
+   "regiao_de_saude": "22009 Vale do Rio Guaribas",
+   "obitos": 20,
+   "internacoes": 12,
+   "populacao_2022": 9420
+  },
+  "220490": {
+   "nome_tabnet": "ISAIAS COELHO",
+   "regiao_de_saude": "22008 Vale do Canindé",
+   "obitos": 17,
+   "internacoes": 16,
+   "populacao_2022": 7774
+  },
+  "220500": {
+   "nome_tabnet": "ITAINOPOLIS",
+   "regiao_de_saude": "22009 Vale do Rio Guaribas",
+   "obitos": 21,
+   "internacoes": 20,
+   "populacao_2022": 10790
+  },
+  "220510": {
+   "nome_tabnet": "ITAUEIRA",
+   "regiao_de_saude": "22011 Vale dos Rios Piauí e Itaueiras",
+   "obitos": 19,
+   "internacoes": 167,
+   "populacao_2022": 10323
+  },
+  "220515": {
+   "nome_tabnet": "JACOBINA DO PIAUI",
+   "regiao_de_saude": "22012 Chapada Vale do Rio Itaim",
+   "obitos": 23,
+   "internacoes": 3,
+   "populacao_2022": 5613
+  },
+  "220520": {
+   "nome_tabnet": "JAICOS",
+   "regiao_de_saude": "22012 Chapada Vale do Rio Itaim",
+   "obitos": 29,
+   "internacoes": 17,
+   "populacao_2022": 17527
+  },
+  "220525": {
+   "nome_tabnet": "JARDIM DO MULATO",
+   "regiao_de_saude": "22004 Entre Rios",
+   "obitos": 6,
+   "internacoes": 54,
+   "populacao_2022": 4180
+  },
+  "220527": {
+   "nome_tabnet": "JATOBA DO PIAUI",
+   "regiao_de_saude": "22001 Carnaubais",
+   "obitos": 8,
+   "internacoes": 73,
+   "populacao_2022": 4494
+  },
+  "220530": {
+   "nome_tabnet": "JERUMENHA",
+   "regiao_de_saude": "22011 Vale dos Rios Piauí e Itaueiras",
+   "obitos": 11,
+   "internacoes": 83,
+   "populacao_2022": 4497
+  },
+  "220535": {
+   "nome_tabnet": "JOAO COSTA",
+   "regiao_de_saude": "22006 Serra da Capivara",
+   "obitos": 6,
+   "internacoes": 51,
+   "populacao_2022": 2970
+  },
+  "220540": {
+   "nome_tabnet": "JOAQUIM PIRES",
+   "regiao_de_saude": "22003 Cocais",
+   "obitos": 27,
+   "internacoes": 28,
+   "populacao_2022": 13886
+  },
+  "220545": {
+   "nome_tabnet": "JOCA MARQUES",
+   "regiao_de_saude": "22003 Cocais",
+   "obitos": 8,
+   "internacoes": 14,
+   "populacao_2022": 5394
+  },
+  "220550": {
+   "nome_tabnet": "JOSE DE FREITAS",
+   "regiao_de_saude": "22004 Entre Rios",
+   "obitos": 46,
+   "internacoes": 518,
+   "populacao_2022": 42559
+  },
+  "220551": {
+   "nome_tabnet": "JUAZEIRO DO PIAUI",
+   "regiao_de_saude": "22001 Carnaubais",
+   "obitos": 4,
+   "internacoes": 78,
+   "populacao_2022": 5214
+  },
+  "220552": {
+   "nome_tabnet": "JULIO BORGES",
+   "regiao_de_saude": "22002 Chapada das Mangabeiras",
+   "obitos": 4,
+   "internacoes": 52,
+   "populacao_2022": 5388
+  },
+  "220553": {
+   "nome_tabnet": "JUREMA",
+   "regiao_de_saude": "22006 Serra da Capivara",
+   "obitos": 14,
+   "internacoes": 101,
+   "populacao_2022": 4425
+  },
+  "220554": {
+   "nome_tabnet": "LAGOINHA DO PIAUI",
+   "regiao_de_saude": "22004 Entre Rios",
+   "obitos": 14,
+   "internacoes": 28,
+   "populacao_2022": 2939
+  },
+  "220555": {
+   "nome_tabnet": "LAGOA ALEGRE",
+   "regiao_de_saude": "22004 Entre Rios",
+   "obitos": 9,
+   "internacoes": 82,
+   "populacao_2022": 8256
+  },
+  "220556": {
+   "nome_tabnet": "LAGOA DO BARRO DO PIAUI",
+   "regiao_de_saude": "22006 Serra da Capivara",
+   "obitos": 8,
+   "internacoes": 42,
+   "populacao_2022": 4995
+  },
+  "220557": {
+   "nome_tabnet": "LAGOA DE SAO FRANCISCO",
+   "regiao_de_saude": "22003 Cocais",
+   "obitos": 7,
+   "internacoes": 33,
+   "populacao_2022": 6331
+  },
+  "220558": {
+   "nome_tabnet": "LAGOA DO PIAUI",
+   "regiao_de_saude": "22004 Entre Rios",
+   "obitos": 8,
+   "internacoes": 52,
+   "populacao_2022": 4810
+  },
+  "220559": {
+   "nome_tabnet": "LAGOA DO SITIO",
+   "regiao_de_saude": "22010 Vale do Sambito",
+   "obitos": 8,
+   "internacoes": 22,
+   "populacao_2022": 4520
+  },
+  "220560": {
+   "nome_tabnet": "LANDRI SALES",
+   "regiao_de_saude": "22011 Vale dos Rios Piauí e Itaueiras",
+   "obitos": 8,
+   "internacoes": 83,
+   "populacao_2022": 5213
+  },
+  "220570": {
+   "nome_tabnet": "LUIS CORREIA",
+   "regiao_de_saude": "22005 Planície Litorânea",
+   "obitos": 69,
+   "internacoes": 74,
+   "populacao_2022": 30641
+  },
+  "220580": {
+   "nome_tabnet": "LUZILANDIA",
+   "regiao_de_saude": "22003 Cocais",
+   "obitos": 42,
+   "internacoes": 94,
+   "populacao_2022": 25375
+  },
+  "220585": {
+   "nome_tabnet": "MADEIRO",
+   "regiao_de_saude": "22003 Cocais",
+   "obitos": 9,
+   "internacoes": 8,
+   "populacao_2022": 8032
+  },
+  "220590": {
+   "nome_tabnet": "MANOEL EMIDIO",
+   "regiao_de_saude": "22011 Vale dos Rios Piauí e Itaueiras",
+   "obitos": 12,
+   "internacoes": 63,
+   "populacao_2022": 5209
+  },
+  "220595": {
+   "nome_tabnet": "MARCOLANDIA",
+   "regiao_de_saude": "22012 Chapada Vale do Rio Itaim",
+   "obitos": 20,
+   "internacoes": 10,
+   "populacao_2022": 8533
+  },
+  "220600": {
+   "nome_tabnet": "MARCOS PARENTE",
+   "regiao_de_saude": "22011 Vale dos Rios Piauí e Itaueiras",
+   "obitos": 10,
+   "internacoes": 65,
+   "populacao_2022": 4724
+  },
+  "220605": {
+   "nome_tabnet": "MASSAPE DO PIAUI",
+   "regiao_de_saude": "22012 Chapada Vale do Rio Itaim",
+   "obitos": 7,
+   "internacoes": 2,
+   "populacao_2022": 5218
+  },
+  "220610": {
+   "nome_tabnet": "MATIAS OLIMPIO",
+   "regiao_de_saude": "22003 Cocais",
+   "obitos": 15,
+   "internacoes": 32,
+   "populacao_2022": 10641
+  },
+  "220620": {
+   "nome_tabnet": "MIGUEL ALVES",
+   "regiao_de_saude": "22004 Entre Rios",
+   "obitos": 52,
+   "internacoes": 377,
+   "populacao_2022": 32150
+  },
+  "220630": {
+   "nome_tabnet": "MIGUEL LEAO",
+   "regiao_de_saude": "22004 Entre Rios",
+   "obitos": 6,
+   "internacoes": 23,
+   "populacao_2022": 1318
+  },
+  "220635": {
+   "nome_tabnet": "MILTON BRANDAO",
+   "regiao_de_saude": "22003 Cocais",
+   "obitos": 10,
+   "internacoes": 32,
+   "populacao_2022": 6542
+  },
+  "220640": {
+   "nome_tabnet": "MONSENHOR GIL",
+   "regiao_de_saude": "22004 Entre Rios",
+   "obitos": 26,
+   "internacoes": 139,
+   "populacao_2022": 10255
+  },
+  "220650": {
+   "nome_tabnet": "MONSENHOR HIPOLITO",
+   "regiao_de_saude": "22009 Vale do Rio Guaribas",
+   "obitos": 18,
+   "internacoes": 12,
+   "populacao_2022": 7577
+  },
+  "220660": {
+   "nome_tabnet": "MONTE ALEGRE DO PIAUI",
+   "regiao_de_saude": "22002 Chapada das Mangabeiras",
+   "obitos": 14,
+   "internacoes": 118,
+   "populacao_2022": 10660
+  },
+  "220665": {
+   "nome_tabnet": "MORRO CABECA NO TEMPO",
+   "regiao_de_saude": "22002 Chapada das Mangabeiras",
+   "obitos": 3,
+   "internacoes": 54,
+   "populacao_2022": 4377
+  },
+  "220667": {
+   "nome_tabnet": "MORRO DO CHAPEU DO PIAUI",
+   "regiao_de_saude": "22003 Cocais",
+   "obitos": 7,
+   "internacoes": 12,
+   "populacao_2022": 6425
+  },
+  "220669": {
+   "nome_tabnet": "MURICI DOS PORTELAS",
+   "regiao_de_saude": "22005 Planície Litorânea",
+   "obitos": 12,
+   "internacoes": 14,
+   "populacao_2022": 9797
+  },
+  "220670": {
+   "nome_tabnet": "NAZARE DO PIAUI",
+   "regiao_de_saude": "22011 Vale dos Rios Piauí e Itaueiras",
+   "obitos": 9,
+   "internacoes": 102,
+   "populacao_2022": 6665
+  },
+  "220672": {
+   "nome_tabnet": "NAZARIA",
+   "regiao_de_saude": "22004 Entre Rios",
+   "obitos": 20,
+   "internacoes": 136,
+   "populacao_2022": 10262
+  },
+  "220675": {
+   "nome_tabnet": "NOSSA SENHORA DE NAZARE",
+   "regiao_de_saude": "22001 Carnaubais",
+   "obitos": 11,
+   "internacoes": 72,
+   "populacao_2022": 5228
+  },
+  "220680": {
+   "nome_tabnet": "NOSSA SENHORA DOS REMEDIOS",
+   "regiao_de_saude": "22003 Cocais",
+   "obitos": 12,
+   "internacoes": 69,
+   "populacao_2022": 8525
+  },
+  "220690": {
+   "nome_tabnet": "NOVO ORIENTE DO PIAUI",
+   "regiao_de_saude": "22010 Vale do Sambito",
+   "obitos": 13,
+   "internacoes": 19,
+   "populacao_2022": 6097
+  },
+  "220695": {
+   "nome_tabnet": "NOVO SANTO ANTONIO",
+   "regiao_de_saude": "22001 Carnaubais",
+   "obitos": 5,
+   "internacoes": 30,
+   "populacao_2022": 2827
+  },
+  "220700": {
+   "nome_tabnet": "OEIRAS",
+   "regiao_de_saude": "22008 Vale do Canindé",
+   "obitos": 50,
+   "internacoes": 382,
+   "populacao_2022": 38161
+  },
+  "220710": {
+   "nome_tabnet": "OLHO D'AGUA DO PIAUI",
+   "regiao_de_saude": "22004 Entre Rios",
+   "obitos": 7,
+   "internacoes": 31,
+   "populacao_2022": 2637
+  },
+  "220720": {
+   "nome_tabnet": "PADRE MARCOS",
+   "regiao_de_saude": "22012 Chapada Vale do Rio Itaim",
+   "obitos": 8,
+   "internacoes": 4,
+   "populacao_2022": 6382
+  },
+  "220730": {
+   "nome_tabnet": "PAES LANDIM",
+   "regiao_de_saude": "22011 Vale dos Rios Piauí e Itaueiras",
+   "obitos": 8,
+   "internacoes": 62,
+   "populacao_2022": 4088
+  },
+  "220735": {
+   "nome_tabnet": "PAJEU DO PIAUI",
+   "regiao_de_saude": "22011 Vale dos Rios Piauí e Itaueiras",
+   "obitos": 3,
+   "internacoes": 37,
+   "populacao_2022": 3000
+  },
+  "220740": {
+   "nome_tabnet": "PALMEIRA DO PIAUI",
+   "regiao_de_saude": "22002 Chapada das Mangabeiras",
+   "obitos": 8,
+   "internacoes": 71,
+   "populacao_2022": 4952
+  },
+  "220750": {
+   "nome_tabnet": "PALMEIRAIS",
+   "regiao_de_saude": "22004 Entre Rios",
+   "obitos": 23,
+   "internacoes": 157,
+   "populacao_2022": 13264
+  },
+  "220755": {
+   "nome_tabnet": "PAQUETA",
+   "regiao_de_saude": "22009 Vale do Rio Guaribas",
+   "obitos": 7,
+   "internacoes": 7,
+   "populacao_2022": 3813
+  },
+  "220760": {
+   "nome_tabnet": "PARNAGUA",
+   "regiao_de_saude": "22002 Chapada das Mangabeiras",
+   "obitos": 10,
+   "internacoes": 124,
+   "populacao_2022": 10103
+  },
+  "220770": {
+   "nome_tabnet": "PARNAIBA",
+   "regiao_de_saude": "22005 Planície Litorânea",
+   "obitos": 163,
+   "internacoes": 352,
+   "populacao_2022": 162159
+  },
+  "220775": {
+   "nome_tabnet": "PASSAGEM FRANCA DO PIAUI",
+   "regiao_de_saude": "22004 Entre Rios",
+   "obitos": 4,
+   "internacoes": 23,
+   "populacao_2022": 4135
+  },
+  "220777": {
+   "nome_tabnet": "PATOS DO PIAUI",
+   "regiao_de_saude": "22012 Chapada Vale do Rio Itaim",
+   "obitos": 14,
+   "internacoes": 14,
+   "populacao_2022": 5425
+  },
+  "220779": {
+   "nome_tabnet": "PAU D'ARCO DO PIAUI",
+   "regiao_de_saude": "22004 Entre Rios",
+   "obitos": 9,
+   "internacoes": 58,
+   "populacao_2022": 3880
+  },
+  "220780": {
+   "nome_tabnet": "PAULISTANA",
+   "regiao_de_saude": "22012 Chapada Vale do Rio Itaim",
+   "obitos": 34,
+   "internacoes": 35,
+   "populacao_2022": 21055
+  },
+  "220785": {
+   "nome_tabnet": "PAVUSSU",
+   "regiao_de_saude": "22011 Vale dos Rios Piauí e Itaueiras",
+   "obitos": 2,
+   "internacoes": 51,
+   "populacao_2022": 3628
+  },
+  "220790": {
+   "nome_tabnet": "PEDRO II",
+   "regiao_de_saude": "22003 Cocais",
+   "obitos": 58,
+   "internacoes": 199,
+   "populacao_2022": 37894
+  },
+  "220793": {
+   "nome_tabnet": "PEDRO LAURENTINO",
+   "regiao_de_saude": "22006 Serra da Capivara",
+   "obitos": 5,
+   "internacoes": 41,
+   "populacao_2022": 2458
+  },
+  "220795": {
+   "nome_tabnet": "NOVA SANTA RITA",
+   "regiao_de_saude": "22006 Serra da Capivara",
+   "obitos": 8,
+   "internacoes": 45,
+   "populacao_2022": 4076
+  },
+  "220800": {
+   "nome_tabnet": "PICOS",
+   "regiao_de_saude": "22009 Vale do Rio Guaribas",
+   "obitos": 135,
+   "internacoes": 139,
+   "populacao_2022": 83090
+  },
+  "220810": {
+   "nome_tabnet": "PIMENTEIRAS",
+   "regiao_de_saude": "22010 Vale do Sambito",
+   "obitos": 12,
+   "internacoes": 29,
+   "populacao_2022": 11341
+  },
+  "220820": {
+   "nome_tabnet": "PIO IX",
+   "regiao_de_saude": "22009 Vale do Rio Guaribas",
+   "obitos": 40,
+   "internacoes": 41,
+   "populacao_2022": 17613
+  },
+  "220830": {
+   "nome_tabnet": "PIRACURUCA",
+   "regiao_de_saude": "22003 Cocais",
+   "obitos": 62,
+   "internacoes": 152,
+   "populacao_2022": 28846
+  },
+  "220840": {
+   "nome_tabnet": "PIRIPIRI",
+   "regiao_de_saude": "22003 Cocais",
+   "obitos": 101,
+   "internacoes": 472,
+   "populacao_2022": 65538
+  },
+  "220850": {
+   "nome_tabnet": "PORTO",
+   "regiao_de_saude": "22003 Cocais",
+   "obitos": 14,
+   "internacoes": 64,
+   "populacao_2022": 12052
+  },
+  "220855": {
+   "nome_tabnet": "PORTO ALEGRE DO PIAUI",
+   "regiao_de_saude": "22011 Vale dos Rios Piauí e Itaueiras",
+   "obitos": 5,
+   "internacoes": 28,
+   "populacao_2022": 2364
+  },
+  "220860": {
+   "nome_tabnet": "PRATA DO PIAUI",
+   "regiao_de_saude": "22010 Vale do Sambito",
+   "obitos": 5,
+   "internacoes": 10,
+   "populacao_2022": 3042
+  },
+  "220865": {
+   "nome_tabnet": "QUEIMADA NOVA",
+   "regiao_de_saude": "22012 Chapada Vale do Rio Itaim",
+   "obitos": 13,
+   "internacoes": 11,
+   "populacao_2022": 8738
+  },
+  "220870": {
+   "nome_tabnet": "REDENCAO DO GURGUEIA",
+   "regiao_de_saude": "22002 Chapada das Mangabeiras",
+   "obitos": 14,
+   "internacoes": 130,
+   "populacao_2022": 8394
+  },
+  "220880": {
+   "nome_tabnet": "REGENERACAO",
+   "regiao_de_saude": "22004 Entre Rios",
+   "obitos": 27,
+   "internacoes": 175,
+   "populacao_2022": 17133
+  },
+  "220885": {
+   "nome_tabnet": "RIACHO FRIO",
+   "regiao_de_saude": "22002 Chapada das Mangabeiras",
+   "obitos": 5,
+   "internacoes": 36,
+   "populacao_2022": 4165
+  },
+  "220887": {
+   "nome_tabnet": "RIBEIRA DO PIAUI",
+   "regiao_de_saude": "22011 Vale dos Rios Piauí e Itaueiras",
+   "obitos": 6,
+   "internacoes": 51,
+   "populacao_2022": 4055
+  },
+  "220890": {
+   "nome_tabnet": "RIBEIRO GONCALVES",
+   "regiao_de_saude": "22007 Tabuleiros do Alto Parnaíba",
+   "obitos": 18,
+   "internacoes": 80,
+   "populacao_2022": 6164
+  },
+  "220900": {
+   "nome_tabnet": "RIO GRANDE DO PIAUI",
+   "regiao_de_saude": "22011 Vale dos Rios Piauí e Itaueiras",
+   "obitos": 6,
+   "internacoes": 105,
+   "populacao_2022": 5801
+  },
+  "220910": {
+   "nome_tabnet": "SANTA CRUZ DO PIAUI",
+   "regiao_de_saude": "22009 Vale do Rio Guaribas",
+   "obitos": 13,
+   "internacoes": 11,
+   "populacao_2022": 5831
+  },
+  "220915": {
+   "nome_tabnet": "SANTA CRUZ DOS MILAGRES",
+   "regiao_de_saude": "22010 Vale do Sambito",
+   "obitos": 6,
+   "internacoes": 37,
+   "populacao_2022": 3435
+  },
+  "220920": {
+   "nome_tabnet": "SANTA FILOMENA",
+   "regiao_de_saude": "22002 Chapada das Mangabeiras",
+   "obitos": 21,
+   "internacoes": 84,
+   "populacao_2022": 6087
+  },
+  "220930": {
+   "nome_tabnet": "SANTA LUZ",
+   "regiao_de_saude": "22002 Chapada das Mangabeiras",
+   "obitos": 7,
+   "internacoes": 82,
+   "populacao_2022": 5336
+  },
+  "220935": {
+   "nome_tabnet": "SANTANA DO PIAUI",
+   "regiao_de_saude": "22009 Vale do Rio Guaribas",
+   "obitos": 6,
+   "internacoes": 3,
+   "populacao_2022": 4125
+  },
+  "220937": {
+   "nome_tabnet": "SANTA ROSA DO PIAUI",
+   "regiao_de_saude": "22008 Vale do Canindé",
+   "obitos": 13,
+   "internacoes": 37,
+   "populacao_2022": 4650
+  },
+  "220940": {
+   "nome_tabnet": "SANTO ANTONIO DE LISBOA",
+   "regiao_de_saude": "22009 Vale do Rio Guaribas",
+   "obitos": 8,
+   "internacoes": 7,
+   "populacao_2022": 5839
+  },
+  "220945": {
+   "nome_tabnet": "SANTO ANTONIO DOS MILAGRES",
+   "regiao_de_saude": "22004 Entre Rios",
+   "obitos": 5,
+   "internacoes": 20,
+   "populacao_2022": 2138
+  },
+  "220950": {
+   "nome_tabnet": "SANTO INACIO DO PIAUI",
+   "regiao_de_saude": "22008 Vale do Canindé",
+   "obitos": 6,
+   "internacoes": 27,
+   "populacao_2022": 3646
+  },
+  "220955": {
+   "nome_tabnet": "SAO BRAZ DO PIAUI",
+   "regiao_de_saude": "22006 Serra da Capivara",
+   "obitos": 8,
+   "internacoes": 53,
+   "populacao_2022": 4358
+  },
+  "220960": {
+   "nome_tabnet": "SAO FELIX DO PIAUI",
+   "regiao_de_saude": "22010 Vale do Sambito",
+   "obitos": 3,
+   "internacoes": 23,
+   "populacao_2022": 2842
+  },
+  "220965": {
+   "nome_tabnet": "SAO FRANCISCO DE ASSIS DO PIAUI",
+   "regiao_de_saude": "22008 Vale do Canindé",
+   "obitos": 6,
+   "internacoes": 52,
+   "populacao_2022": 5572
+  },
+  "220970": {
+   "nome_tabnet": "SAO FRANCISCO DO PIAUI",
+   "regiao_de_saude": "22011 Vale dos Rios Piauí e Itaueiras",
+   "obitos": 10,
+   "internacoes": 87,
+   "populacao_2022": 5392
+  },
+  "220975": {
+   "nome_tabnet": "SAO GONCALO DO GURGUEIA",
+   "regiao_de_saude": "22002 Chapada das Mangabeiras",
+   "obitos": 5,
+   "internacoes": 47,
+   "populacao_2022": 2947
+  },
+  "220980": {
+   "nome_tabnet": "SAO GONCALO DO PIAUI",
+   "regiao_de_saude": "22004 Entre Rios",
+   "obitos": 6,
+   "internacoes": 54,
+   "populacao_2022": 4837
+  },
+  "220985": {
+   "nome_tabnet": "SAO JOAO DA CANABRAVA",
+   "regiao_de_saude": "22009 Vale do Rio Guaribas",
+   "obitos": 13,
+   "internacoes": 9,
+   "populacao_2022": 4242
+  },
+  "220987": {
+   "nome_tabnet": "SAO JOAO DA FRONTEIRA",
+   "regiao_de_saude": "22003 Cocais",
+   "obitos": 13,
+   "internacoes": 31,
+   "populacao_2022": 5522
+  },
+  "220990": {
+   "nome_tabnet": "SAO JOAO DA SERRA",
+   "regiao_de_saude": "22001 Carnaubais",
+   "obitos": 13,
+   "internacoes": 96,
+   "populacao_2022": 6114
+  },
+  "220995": {
+   "nome_tabnet": "SAO JOAO DA VARJOTA",
+   "regiao_de_saude": "22008 Vale do Canindé",
+   "obitos": 6,
+   "internacoes": 46,
+   "populacao_2022": 4383
+  },
+  "220997": {
+   "nome_tabnet": "SAO JOAO DO ARRAIAL",
+   "regiao_de_saude": "22003 Cocais",
+   "obitos": 9,
+   "internacoes": 22,
+   "populacao_2022": 8186
+  },
+  "221000": {
+   "nome_tabnet": "SAO JOAO DO PIAUI",
+   "regiao_de_saude": "22006 Serra da Capivara",
+   "obitos": 21,
+   "internacoes": 251,
+   "populacao_2022": 21421
+  },
+  "221005": {
+   "nome_tabnet": "SAO JOSE DO DIVINO",
+   "regiao_de_saude": "22003 Cocais",
+   "obitos": 6,
+   "internacoes": 30,
+   "populacao_2022": 4841
+  },
+  "221010": {
+   "nome_tabnet": "SAO JOSE DO PEIXE",
+   "regiao_de_saude": "22011 Vale dos Rios Piauí e Itaueiras",
+   "obitos": 4,
+   "internacoes": 50,
+   "populacao_2022": 3297
+  },
+  "221020": {
+   "nome_tabnet": "SAO JOSE DO PIAUI",
+   "regiao_de_saude": "22009 Vale do Rio Guaribas",
+   "obitos": 18,
+   "internacoes": 10,
+   "populacao_2022": 6597
+  },
+  "221030": {
+   "nome_tabnet": "SAO JULIAO",
+   "regiao_de_saude": "22009 Vale do Rio Guaribas",
+   "obitos": 8,
+   "internacoes": 8,
+   "populacao_2022": 6025
+  },
+  "221035": {
+   "nome_tabnet": "SAO LOURENCO DO PIAUI",
+   "regiao_de_saude": "22006 Serra da Capivara",
+   "obitos": 10,
+   "internacoes": 75,
+   "populacao_2022": 4410
+  },
+  "221037": {
+   "nome_tabnet": "SAO LUIS DO PIAUI",
+   "regiao_de_saude": "22009 Vale do Rio Guaribas",
+   "obitos": 6,
+   "internacoes": 2,
+   "populacao_2022": 2309
+  },
+  "221038": {
+   "nome_tabnet": "SAO MIGUEL DA BAIXA GRANDE",
+   "regiao_de_saude": "22010 Vale do Sambito",
+   "obitos": 6,
+   "internacoes": 12,
+   "populacao_2022": 2269
+  },
+  "221039": {
+   "nome_tabnet": "SAO MIGUEL DO FIDALGO",
+   "regiao_de_saude": "22011 Vale dos Rios Piauí e Itaueiras",
+   "obitos": 8,
+   "internacoes": 39,
+   "populacao_2022": 2829
+  },
+  "221040": {
+   "nome_tabnet": "SAO MIGUEL DO TAPUIO",
+   "regiao_de_saude": "22001 Carnaubais",
+   "obitos": 22,
+   "internacoes": 174,
+   "populacao_2022": 17554
+  },
+  "221050": {
+   "nome_tabnet": "SAO PEDRO DO PIAUI",
+   "regiao_de_saude": "22004 Entre Rios",
+   "obitos": 21,
+   "internacoes": 191,
+   "populacao_2022": 13755
+  },
+  "221060": {
+   "nome_tabnet": "SAO RAIMUNDO NONATO",
+   "regiao_de_saude": "22006 Serra da Capivara",
+   "obitos": 69,
+   "internacoes": 594,
+   "populacao_2022": 38934
+  },
+  "221062": {
+   "nome_tabnet": "SEBASTIAO BARROS",
+   "regiao_de_saude": "22002 Chapada das Mangabeiras",
+   "obitos": 12,
+   "internacoes": 41,
+   "populacao_2022": 3202
+  },
+  "221063": {
+   "nome_tabnet": "SEBASTIAO LEAL",
+   "regiao_de_saude": "22007 Tabuleiros do Alto Parnaíba",
+   "obitos": 13,
+   "internacoes": 55,
+   "populacao_2022": 4446
+  },
+  "221065": {
+   "nome_tabnet": "SIGEFREDO PACHECO",
+   "regiao_de_saude": "22001 Carnaubais",
+   "obitos": 29,
+   "internacoes": 128,
+   "populacao_2022": 9460
+  },
+  "221070": {
+   "nome_tabnet": "SIMOES",
+   "regiao_de_saude": "22012 Chapada Vale do Rio Itaim",
+   "obitos": 23,
+   "internacoes": 24,
+   "populacao_2022": 14350
+  },
+  "221080": {
+   "nome_tabnet": "SIMPLICIO MENDES",
+   "regiao_de_saude": "22008 Vale do Canindé",
+   "obitos": 23,
+   "internacoes": 59,
+   "populacao_2022": 13870
+  },
+  "221090": {
+   "nome_tabnet": "SOCORRO DO PIAUI",
+   "regiao_de_saude": "22011 Vale dos Rios Piauí e Itaueiras",
+   "obitos": 6,
+   "internacoes": 55,
+   "populacao_2022": 4141
+  },
+  "221093": {
+   "nome_tabnet": "SUSSUAPARA",
+   "regiao_de_saude": "22009 Vale do Rio Guaribas",
+   "obitos": 18,
+   "internacoes": 16,
+   "populacao_2022": 6220
+  },
+  "221095": {
+   "nome_tabnet": "TAMBORIL DO PIAUI",
+   "regiao_de_saude": "22011 Vale dos Rios Piauí e Itaueiras",
+   "obitos": 1,
+   "internacoes": 22,
+   "populacao_2022": 2949
+  },
+  "221097": {
+   "nome_tabnet": "TANQUE DO PIAUI",
+   "regiao_de_saude": "22008 Vale do Canindé",
+   "obitos": 2,
+   "internacoes": 17,
+   "populacao_2022": 2316
+  },
+  "221100": {
+   "nome_tabnet": "TERESINA",
+   "regiao_de_saude": "22004 Entre Rios",
+   "obitos": 803,
+   "internacoes": 12754,
+   "populacao_2022": 866300
+  },
+  "221110": {
+   "nome_tabnet": "UNIAO",
+   "regiao_de_saude": "22004 Entre Rios",
+   "obitos": 79,
+   "internacoes": 573,
+   "populacao_2022": 46119
+  },
+  "221120": {
+   "nome_tabnet": "URUCUI",
+   "regiao_de_saude": "22007 Tabuleiros do Alto Parnaíba",
+   "obitos": 50,
+   "internacoes": 417,
+   "populacao_2022": 25203
+  },
+  "221130": {
+   "nome_tabnet": "VALENCA DO PIAUI",
+   "regiao_de_saude": "22010 Vale do Sambito",
+   "obitos": 36,
+   "internacoes": 118,
+   "populacao_2022": 22279
+  },
+  "221135": {
+   "nome_tabnet": "VARZEA BRANCA",
+   "regiao_de_saude": "22006 Serra da Capivara",
+   "obitos": 10,
+   "internacoes": 57,
+   "populacao_2022": 5055
+  },
+  "221140": {
+   "nome_tabnet": "VARZEA GRANDE",
+   "regiao_de_saude": "22010 Vale do Sambito",
+   "obitos": 5,
+   "internacoes": 38,
+   "populacao_2022": 4417
+  },
+  "221150": {
+   "nome_tabnet": "VERA MENDES",
+   "regiao_de_saude": "22009 Vale do Rio Guaribas",
+   "obitos": 10,
+   "internacoes": 3,
+   "populacao_2022": 3185
+  },
+  "221160": {
+   "nome_tabnet": "VILA NOVA DO PIAUI",
+   "regiao_de_saude": "22009 Vale do Rio Guaribas",
+   "obitos": 11,
+   "internacoes": 6,
+   "populacao_2022": 2935
+  },
+  "221170": {
+   "nome_tabnet": "WALL FERRAZ",
+   "regiao_de_saude": "22009 Vale do Rio Guaribas",
+   "obitos": 5,
+   "internacoes": 5,
+   "populacao_2022": 4059
+  }
+ },
+ "obitos_por_local_de_ocorrencia": {
+  "22001 Carnaubais": {
+   "Hospital": 98,
+   "Outro estabelecimento de saúde": 0,
+   "Domicílio": 3,
+   "Via pública": 151,
+   "Outros": 11,
+   "Ignorado": 0,
+   "Total": 263
+  },
+  "22002 Chapada das Mangabeiras": {
+   "Hospital": 95,
+   "Outro estabelecimento de saúde": 0,
+   "Domicílio": 2,
+   "Via pública": 179,
+   "Outros": 21,
+   "Ignorado": 1,
+   "Total": 298
+  },
+  "22003 Cocais": {
+   "Hospital": 309,
+   "Outro estabelecimento de saúde": 6,
+   "Domicílio": 8,
+   "Via pública": 314,
+   "Outros": 21,
+   "Ignorado": 0,
+   "Total": 658
+  },
+  "22004 Entre Rios": {
+   "Hospital": 562,
+   "Outro estabelecimento de saúde": 2,
+   "Domicílio": 19,
+   "Via pública": 755,
+   "Outros": 51,
+   "Ignorado": 0,
+   "Total": 1389
+  },
+  "22005 Planície Litorânea": {
+   "Hospital": 175,
+   "Outro estabelecimento de saúde": 1,
+   "Domicílio": 11,
+   "Via pública": 178,
+   "Outros": 16,
+   "Ignorado": 0,
+   "Total": 381
+  },
+  "22006 Serra da Capivara": {
+   "Hospital": 136,
+   "Outro estabelecimento de saúde": 1,
+   "Domicílio": 6,
+   "Via pública": 124,
+   "Outros": 13,
+   "Ignorado": 0,
+   "Total": 280
+  },
+  "22007 Tabuleiros do Alto Parnaíba": {
+   "Hospital": 46,
+   "Outro estabelecimento de saúde": 0,
+   "Domicílio": 0,
+   "Via pública": 81,
+   "Outros": 7,
+   "Ignorado": 0,
+   "Total": 134
+  },
+  "22008 Vale do Canindé": {
+   "Hospital": 68,
+   "Outro estabelecimento de saúde": 1,
+   "Domicílio": 6,
+   "Via pública": 88,
+   "Outros": 19,
+   "Ignorado": 0,
+   "Total": 182
+  },
+  "22009 Vale do Rio Guaribas": {
+   "Hospital": 192,
+   "Outro estabelecimento de saúde": 1,
+   "Domicílio": 7,
+   "Via pública": 253,
+   "Outros": 36,
+   "Ignorado": 0,
+   "Total": 489
+  },
+  "22010 Vale do Sambito": {
+   "Hospital": 59,
+   "Outro estabelecimento de saúde": 0,
+   "Domicílio": 1,
+   "Via pública": 87,
+   "Outros": 15,
+   "Ignorado": 1,
+   "Total": 163
+  },
+  "22011 Vale dos Rios Piauí e Itaueiras": {
+   "Hospital": 108,
+   "Outro estabelecimento de saúde": 2,
+   "Domicílio": 12,
+   "Via pública": 191,
+   "Outros": 14,
+   "Ignorado": 0,
+   "Total": 327
+  },
+  "22012 Chapada Vale do Rio Itaim": {
+   "Hospital": 72,
+   "Outro estabelecimento de saúde": 1,
+   "Domicílio": 3,
+   "Via pública": 133,
+   "Outros": 23,
+   "Ignorado": 0,
+   "Total": 232
+  }
+ }
+}
